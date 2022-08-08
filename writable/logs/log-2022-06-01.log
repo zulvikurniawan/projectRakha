@@ -1,0 +1,70 @@
+CRITICAL - 2022-06-01 05:26:55 --> Undefined index: id
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 133, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(28): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-06-01 07:03:01 --> Call to undefined method App\Models\AccountModel::getAccount
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(25): CodeIgniter\Model->__call('getAccount', Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-01 07:03:22 --> Call to undefined method App\Models\AccountModel::getAccount
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(25): CodeIgniter\Model->__call('getAccount', Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-01 07:03:24 --> Call to undefined method App\Models\AccountModel::getAccount
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(25): CodeIgniter\Model->__call('getAccount', Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-01 07:03:50 --> Call to undefined method App\Models\AccountModel::getAccount
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(25): CodeIgniter\Model->__call('getAccount', Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-01 07:07:17 --> Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in C:\Users\XIANGLU\Desktop\projectJayanti\app\Config\Routes.php on line 34 and at least 2 expected
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Config\Routes.php(34): CodeIgniter\Router\RouteCollection->get('/')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(713): require('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-01 08:36:34 --> syntax error, unexpected '}'
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-01 08:42:18 --> Invalid file: pages/detailAccountView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/detailAcc...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/detailAcc...', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(40): view('pages/detailAcc...', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->detail('20220501')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}

@@ -1,0 +1,17 @@
+ERROR - 2022-06-21 10:06:17 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-21 10:06:17 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(80): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}

@@ -1,0 +1,140 @@
+CRITICAL - 2022-05-25 10:22:24 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:22:40 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:22:41 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:23:13 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:23:13 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:23:14 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:27:39 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:28:07 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:29:25 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:29:26 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:29:27 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 10:29:27 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 11:29:10 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-25 11:33:18 --> Invalid file: pages/about.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/about.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/about', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(25): view('pages/about')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Pages->about()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}

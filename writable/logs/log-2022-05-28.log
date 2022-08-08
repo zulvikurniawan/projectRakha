@@ -1,0 +1,479 @@
+CRITICAL - 2022-05-28 09:54:27 --> Invalid file: admin/adminView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/adminView...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('admin/adminView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(15): view('admin/adminView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->adminView()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 09:57:34 --> Invalid file: admin/adminView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/adminView...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('admin/adminView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(15): view('admin/adminView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->adminView()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 09:57:35 --> Invalid file: admin/adminView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/adminView...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('admin/adminView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(15): view('admin/adminView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->adminView()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 09:57:36 --> Invalid file: admin/adminView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/adminView...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('admin/adminView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(15): view('admin/adminView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->adminView()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 09:57:37 --> Invalid file: admin/adminView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/adminView...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('admin/adminView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(15): view('admin/adminView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->adminView()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:05:49 --> Invalid file: pages/createTicket.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/createTic...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/createTic...', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(13): view('pages/createTic...', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\pages->createTicket()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:09:37 --> Invalid file: pages/ticket.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/ticket.ph...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/ticket', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\pages.php(14): view('pages/ticket', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\pages->ticket()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\pages))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:09:56 --> Invalid file: ticketView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ticketView.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('ticketView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\ticket.php(14): view('ticketView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\ticket->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ticket))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:10:33 --> Invalid file: ticketView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ticketView.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('ticketView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\ticket.php(14): view('ticketView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\ticket->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ticket))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:10:59 --> Invalid file: ticketView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ticketView.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('ticketView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\ticket.php(14): view('ticketView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\ticket->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ticket))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:11:40 --> Invalid file: ticketView.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ticketView.php')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('ticketView', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\ticket.php(14): view('ticketView', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\ticket->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ticket))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:17:29 --> Invalid file: pages/profile.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/profile.p...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/profile', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\profile.php(14): view('pages/profile', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\profile->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\profile))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:17:45 --> Invalid file: pages/profile.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/profile.p...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/profile', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\profile.php(14): view('pages/profile', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\profile->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\profile))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 10:18:30 --> Invalid file: pages/profile.php
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/profile.p...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/profile', Array, true)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\profile.php(14): view('pages/profile', Array)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\profile->index()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\profile))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-05-28 12:12:24 --> Use of undefined constant dd - assumed 'dd' (this will throw an Error in a future version of PHP)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-05-28 12:12:32 --> Use of undefined constant d - assumed 'd' (this will throw an Error in a future version of PHP)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\Users\\XIANGL...', 17, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-05-28 12:12:47 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-05-28 12:12:50 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+ERROR - 2022-05-28 12:39:18 --> Table 'db_jayanti.db_account' doesn't exist
+CRITICAL - 2022-05-28 12:39:18 --> Table 'db_jayanti.db_account' doesn't exist
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#12 {main}
+ERROR - 2022-05-28 12:46:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+CRITICAL - 2022-05-28 12:46:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:47:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+CRITICAL - 2022-05-28 12:47:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:47:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+CRITICAL - 2022-05-28 12:47:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:47:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+CRITICAL - 2022-05-28 12:47:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:47:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+CRITICAL - 2022-05-28 12:47:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM account' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:47:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM db_jayanti' at line 1
+CRITICAL - 2022-05-28 12:47:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM db_jayanti' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:47:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM db_jayanti' at line 1
+CRITICAL - 2022-05-28 12:47:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELLECT * FROM db_jayanti' at line 1
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELLECT * FROM ...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELLECT * FROM ...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELLECT * FROM ...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELLECT * FROM ...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+ERROR - 2022-05-28 12:48:01 --> Table 'db_jayanti.db_jayanti' doesn't exist
+CRITICAL - 2022-05-28 12:48:01 --> Table 'db_jayanti.db_jayanti' doesn't exist
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+CRITICAL - 2022-05-28 12:49:47 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-05-28 12:58:40 --> Class 'app\Models\accountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 12:59:40 --> Class 'app\Models\accountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 12:59:43 --> Class 'app\Models\accountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:01:07 --> Class 'app\Models\accountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:01:28 --> Class 'app\Models\accountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:01:45 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:26:37 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:26:38 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:26:39 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:26:39 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:26:40 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:26:40 --> Class 'app\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 13:41:24 --> db_jayanti is not a valid database connection group.
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(97): CodeIgniter\Database\Config::connect('db_jayanti')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(16): CodeIgniter\Model->__construct()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-05-28 13:57:50 --> syntax error, unexpected 'AccountModel' (T_STRING)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-05-28 14:29:35 --> Class 'App\Controllers\App\Models\AccountModel' not found
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-05-28 14:31:19 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-05-28 14:43:28 --> Undefined index: NIK
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 24, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(23): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-05-28 14:44:14 --> Undefined index: NIK
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 24, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(23): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-05-28 14:44:15 --> Undefined index: NIK
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 24, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(23): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-05-28 14:44:17 --> Undefined index: NIK
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 24, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(23): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-05-28 14:45:12 --> Undefined index: NIK
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 24, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(23): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-05-28 14:45:33 --> Undefined index: Nama
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\adminView.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\Users\\XIANGL...', 25, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\admin.php(23): view('pages/adminView', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\admin->index()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}

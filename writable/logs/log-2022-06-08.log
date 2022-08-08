@@ -1,0 +1,433 @@
+CRITICAL - 2022-06-08 08:22:52 --> Undefined variable: csrf_field
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\app\Views\pages\addAccountView.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 13, Array)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/addAccoun...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(50): view('pages/addAccoun...', Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->addAccount()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-06-08 10:32:34 -->  route cannot be found while reverse-routing.
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(57): redirect('<!-- DEBUG-VIEW...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-06-08 10:40:30 --> Call to undefined function set_value()
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(210): include()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Common.php(1089): CodeIgniter\View\View->render('pages/addAccoun...', Array, true)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(51): view('pages/addAccoun...', Array)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->addAccount()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#9 {main}
+CRITICAL - 2022-06-08 11:30:39 --> Allowed fields must be specified for model: App\Models\AccountModel
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Acco...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+ERROR - 2022-06-08 11:37:07 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:37:07 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:37:53 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:37:53 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:40:00 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-08 11:40:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#12 {main}
+ERROR - 2022-06-08 11:40:08 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-08 11:40:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#12 {main}
+ERROR - 2022-06-08 11:40:18 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-06-08 11:40:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#12 {main}
+ERROR - 2022-06-08 11:40:47 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:40:47 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:41:11 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:41:11 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:41:22 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:41:22 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+CRITICAL - 2022-06-08 11:47:46 --> syntax error, unexpected 'nik' (T_STRING), expecting ')'
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('admin/addAccoun...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('admin/addAccoun...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-08 11:47:48 --> syntax error, unexpected 'nik' (T_STRING), expecting ')'
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Admin')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('Admin')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-06-08 11:49:12 --> Allowed fields must be specified for model: App\Models\AccountModel
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Acco...')
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+ERROR - 2022-06-08 11:49:26 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:49:26 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:49:48 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:49:48 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(70): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:54:29 --> Column 'tempat_lahir' cannot be null
+CRITICAL - 2022-06-08 11:54:29 --> Column 'tempat_lahir' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(72): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:55:12 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:55:12 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(72): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:56:47 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:56:47 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(72): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:57:31 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:57:31 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(72): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:59:02 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:59:02 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(72): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 11:59:12 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 11:59:12 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(72): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 12:06:26 --> Column 'tempat_lahir' cannot be null
+CRITICAL - 2022-06-08 12:06:26 --> Column 'tempat_lahir' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 12:06:59 --> Column 'tempat_lahir' cannot be null
+CRITICAL - 2022-06-08 12:06:59 --> Column 'tempat_lahir' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 12:07:25 --> Column 'tempat_lahir' cannot be null
+CRITICAL - 2022-06-08 12:07:25 --> Column 'tempat_lahir' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 12:07:52 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-06-08 12:07:52 --> Duplicate entry '0' for key 'PRIMARY'
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
+ERROR - 2022-06-08 12:14:53 --> Column 'jenis_kelamin' cannot be null
+CRITICAL - 2022-06-08 12:14:53 --> Column 'jenis_kelamin' cannot be null
+#0 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ac...', 0)
+#1 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ac...')
+#2 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ac...')
+#3 C:\Users\XIANGLU\Desktop\projectJayanti\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ac...', Array, false)
+#4 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\XIANGLU\Desktop\projectJayanti\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\XIANGLU\Desktop\projectJayanti\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\XIANGLU\Desktop\projectJayanti\app\Controllers\Admin.php(71): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(832): App\Controllers\Admin->save()
+#10 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\Users\XIANGLU\Desktop\projectJayanti\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\XIANGLU\Desktop\projectJayanti\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\XIANGLU\Desktop\projectJayanti\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#14 {main}
