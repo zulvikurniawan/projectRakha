@@ -10,6 +10,6 @@ class Home extends BaseController
             'title' => 'Home | Rakha Program'
         ];
 
-        return view('pages/homeView', $data);
+        return view('pages/home', $data);
     }
 }

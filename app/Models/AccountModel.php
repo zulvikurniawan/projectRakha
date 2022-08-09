@@ -25,12 +25,12 @@ class AccountModel extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
-    public function getAdmin($nama = false)
+    public function getAdmin($id_account = false)
     {
-        if ($nama == false) {
+        if ($id_account == false) {
             return $this->findAll();
         }
 
-        return $this->where(['nama' => $nama])->first();
+        return $this->where(['id_account' => $id_account])->first();
     }
 }

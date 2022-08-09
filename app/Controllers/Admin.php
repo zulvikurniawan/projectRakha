@@ -8,19 +8,9 @@ namespace App\Controllers;
 class Admin extends BaseController
 {
     protected $AccountModel;
-    // jika memaki contstruct
-
-    // public function __construct()
-    // {
-    // $this->AccountModel = new AccountModel();
-    // }
 
     public function index()
     {
-        // tidak memakai construct
-        // namespace berada dalam BaseController
-        // $account = $this->AccountModel->findAll();
-
         $data = [
             'title' => 'Admin | Rakha Program',
             'account' => $this->AccountModel->getAdmin()
@@ -30,11 +20,11 @@ class Admin extends BaseController
     }
 
 
-    public function detail($nama)
+    public function detail($id_account)
     {
         $data = [
-            'title' => 'Detail Account | Rakha Program',
-            'admin' => $this->AccountModel->getAdmin($nama)
+            'title' => 'Detail Account | Jayanti Program',
+            'admin' => $this->AccountModel->getAdmin($id_account)
         ];
 
         return view('pages/detailAccountView', $data);
@@ -42,7 +32,6 @@ class Admin extends BaseController
 
     public function Add()
     {
-
         $data = [
             'title' => 'Add Account | Rakha Program',
             'validation' => \config\Services::validation()
@@ -105,13 +94,13 @@ class Admin extends BaseController
             'foto_profil' => $this->request->getVar('foto_profil')
         ]);
 
-        return redirect()->to('/admin');
+        return redirect()->to('/Admin/');
     }
 
     public function Delete($nik)
     {
         $data = $this->AccountModel->delete($nik);
         dd($data);
-        return redirect()->to('/admin');
+        return redirect()->to('/Admin');
     }
 }

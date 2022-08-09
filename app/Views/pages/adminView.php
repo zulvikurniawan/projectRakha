@@ -41,7 +41,7 @@
                                 </button> -->
 
                                 <!-- tombol tanpa modal -->
-                                <a href="/Admin/<?= $a['nama']; ?>" class="btn btn-sm btn-success">Detail</a>
+                                <a href="/Admin/<?= $a['id_account']; ?>" class="btn btn-sm btn-success">Detail</a>
                                 <a href="#" class="btn btn-sm btn-primary">Edit</a>
                                 <a href="/Admin/Delete" class="btn btn-sm btn-danger">Delete</a>
                             </td>

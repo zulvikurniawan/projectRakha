@@ -56,7 +56,7 @@
         </div>
         <div class="row justify-content-end">
             <div class="col-5 mb-3">
-                <a href="/admin" type="button" class="btn btn-secondary">Back</a>
+                <a href="/admin/save" type="button" class="btn btn-secondary">Back</a>
                 <button type="submit" class="btn btn-primary">Save</button>
             </div>
         </div>
