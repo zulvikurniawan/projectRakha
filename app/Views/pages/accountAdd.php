@@ -2,66 +2,65 @@
 
 <?= $this->section('content'); ?>
 
-<div class="container bg-light mt-3">
-    <div class="row">
-        <div class="col text-center">
-            <h3 class="mt-2">Add Account</h3>
-        </div>
-    </div>
-    <hr>
-    <form action="/admin/save" method="post">
-        <?= csrf_field(); ?>
-        <div class="row justify-content-center">
-            <div class="col-5">
-                <div class="mb-3">
-                    <label for="nik" class="form-label">NIK</label>
-                    <input type="text" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : ''; ?>" id="nik" name="nik" placeholder="Input NIK" autofocus value="<?= old('nik'); ?>">
-                    <div class="invalid-feedback">
-                        <?= $validation->getError('nik'); ?>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper container-backgorund">
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid m-3">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Tambah Akun</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form action="/admin/save" method="post">
+                            <?= csrf_field(); ?>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFile">File input</label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Upload</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                            </div>
+                            <!-- /.card-body -->
+
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <label for="nik" class="form-label">Nama</label>
-                    <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input Nama" autofocus value="<?= old('nama'); ?>">
-                    <div class="invalid-feedback">
-                        <?= $validation->getError('nama'); ?>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="nik" class="form-label">Password</label>
-                    <input type="text" class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" name="password" placeholder="Input Password" autofocus value="<?= old('password'); ?>">
-                    <div class="invalid-feedback">
-                        <?= $validation->getError('password'); ?>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="nik" class="form-label">Email</label>
-                    <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" id="email" name="email" placeholder="Input Password" autofocus value="<?= old('email'); ?>">
-                    <div class="invalid-feedback">
-                        <?= $validation->getError('email'); ?>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="nik" class="form-label">Nomor HP</label>
-                    <input type="text" class="form-control <?= ($validation->hasError('nomor_hp')) ? 'is-invalid' : ''; ?>" id="nomor_hp" name="nomor_hp" placeholder="Input No Hp" autofocus value="<?= old('nomor_hp'); ?>">
-                    <div class="invalid-feedback">
-                        <?= $validation->getError('nomor_hp'); ?>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="foto_profil" class="form-label">Foto Profil</label>
-                    <input class="form-control" type="file" id="foto_profil" name="foto_profil">
+                    <!-- /.card -->
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-end">
-            <div class="col-5 mb-3">
-                <a href="/admin/save" type="button" class="btn btn-secondary">Back</a>
-                <button type="submit" class="btn btn-primary">Save</button>
-            </div>
-        </div>
-    </form>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+
 </div>
+<!-- /.content-wrapper -->
 
 
 <?= $this->endSection(); ?>

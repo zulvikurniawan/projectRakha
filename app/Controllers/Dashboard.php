@@ -9,7 +9,8 @@ class Dashboard extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Detail Account | Rakha Program',
+            'title' => 'Rakha Program | Dashboard',
+            'currentSidebarMenu' => 'dashboard'
         ];
 
         return view('pages/dashboard', $data);

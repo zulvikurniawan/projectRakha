@@ -30,20 +30,19 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
 
-<body class="hold-transition login-page" style="background-color: bisque;">
-    <div class="login-box">
-        <!-- /.login-logo -->
+<body class="hold-transition register-page" style="background-color: bisque;">
+    <div class="register-box">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/login" class="h1"><b>Login</b></a>
+                <a href="../../index2.html" class="h1"><b>Register</b></a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg"><b>Kecamatan Pakuhaji</b></p>
+                <p class="login-box-msg">Kecamatan Pakuhaji</p>
 
-                <!-- form login -->
-                <form action="/login" method="post">
+                <!-- form register -->
+                <form action="" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="NIK">
+                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
@@ -51,37 +50,58 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Full name">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-comment-alt"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-2">
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="Phone Number">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-comment-alt"></span>
+                            </div>
                         </div>
                     </div>
+                    <div class="row mb-2">
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
                 </form>
-                <!-- akhir form login -->
 
-                <p class="mb-0">
-                    <a href="/login/register" class="text-center">Register a new membership</a>
-                </p>
+                <a href="/login" class="text-center">I already have a membership</a>
             </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
+            <!-- /.form-box -->
+        </div><!-- /.card -->
     </div>
-    <!-- /.login-box -->
+    <!-- /.register-box -->
 
     <!-- jQuery -->
-    <script src="/plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/adminlte.min.js"></script>
+    <script src="../../dist/js/adminlte.min.js"></script>
 </body>
 
 </html>

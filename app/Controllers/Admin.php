@@ -13,6 +13,7 @@ class Admin extends BaseController
     {
         $data = [
             'title' => 'Admin | Rakha Program',
+            'currentSidebarMenu' => 'admin',
             'account' => $this->AccountModel->getAdmin()
         ];
 
@@ -24,16 +25,18 @@ class Admin extends BaseController
     {
         $data = [
             'title' => 'Detail Account | Jayanti Program',
+            'currentSidebarMenu' => 'admin',
             'admin' => $this->AccountModel->getAdmin($id_account)
         ];
 
-        return view('pages/detailAccountView', $data);
+        return view('pages/accountDetail', $data);
     }
 
     public function Add()
     {
         $data = [
             'title' => 'Add Account | Rakha Program',
+            'currentSidebarMenu' => 'admin',
             'validation' => \config\Services::validation()
         ];
 
@@ -99,8 +102,7 @@ class Admin extends BaseController
 
     public function Delete($nik)
     {
-        $data = $this->AccountModel->delete($nik);
-        dd($data);
+        $this->AccountModel->delete($nik);
         return redirect()->to('/Admin');
     }
 }

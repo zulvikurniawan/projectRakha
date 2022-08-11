@@ -14,4 +14,13 @@ class login extends BaseController
 
         return view('pages/login', $data);
     }
+
+    public function register()
+    {
+        $data = [
+            'title' => 'Register | Rakha Program',
+        ];
+
+        return view('pages/register', $data);
+    }
 }
