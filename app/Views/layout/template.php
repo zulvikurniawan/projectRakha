@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- my css -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -45,7 +48,7 @@
     <?= $this->renderSection('content'); ?>
 
 
-    <footer class="main-footer"><strong>Program <a href="https://adminlte.io">Rakha</a>. </strong> All rights reserved.<div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.2.0</div>
+    <footer class="main-footer"><strong>Program <a href="https://adminlte.io" style="text-decoration:none">Rakha</a>. </strong> All rights reserved.<div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.2.0</div>
     </footer>
 
     <!-- Control Sidebar -->
@@ -69,6 +72,9 @@
 
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- ChartJS -->
     <script src="plugins/chart.js/Chart.min.js"></script>
@@ -103,7 +109,7 @@
     <script src="dist/js/demo.js"></script>
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <!-- <script src="dist/js/pages/dashboard.js"></script> -->
+    <script src="dist/js/pages/dashboard.js"></script>
 
     <!-- fontawwesome icon -->
     <script src="https://kit.fontawesome.com/9404e985a1.js" crossorigin="anonymous"></script>

@@ -1,0 +1,157 @@
+CRITICAL - 2022-08-12 14:22:34 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 14:23:53 --> Undefined variable: currentSidebarMenu
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\layout\navbar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 18, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(424): CodeIgniter\View\View->render('layout/navbar', NULL, true)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\layout\template.php(46): CodeIgniter\View\View->include('layout/navbar')
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(226): CodeIgniter\View\View->render('layout/template', Array, true)
+#8 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#9 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Admin.php(120): view('pages/accountEd...', Array)
+#10 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit('1')
+#11 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#12 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#15 {main}
+CRITICAL - 2022-08-12 14:33:17 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 14:35:46 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 14:39:58 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 14:41:11 --> Array to string conversion
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Admin.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\Users\\XIANGL...', 138, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->update('1')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-12 14:41:24 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 14:42:10 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:12:10 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:12:36 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:12:48 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:13:35 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:14:46 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:19:41 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:19:55 --> A non-numeric value encountered
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Admin.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\Users\\XIANGL...', 160, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->update('3')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#6 {main}
+CRITICAL - 2022-08-12 15:27:47 --> Trying to access array offset on value of type null
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\pages\accountEdit.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\Users\\XIANGL...', 18, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/accountEd...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Admin.php(121): view('pages/accountEd...', Array)
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit('100')
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-08-12 15:27:52 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:27:55 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:46:38 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-08-12 15:47:27 --> Too few arguments to function App\Controllers\Admin::edit(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Admin->edit()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}

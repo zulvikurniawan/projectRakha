@@ -14,8 +14,8 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-                <button class="btn btn-primary" type="button">Tambah Data Masyarakat</button>
-                <table id="dataMasyarakat" class="table table-bordered table-striped">
+                <a href="/Masyarakat/add" class="btn btn-primary" type="button">Tambah Data Masyarakat</a>
+                <table id="dataMasyarakat" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
                             <th>Rendering engine</th>
@@ -42,15 +42,6 @@
                         </tr>
 
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>Rendering engine</th>
-                            <th>Browser</th>
-                            <th>Platform(s)</th>
-                            <th>Engine version</th>
-                            <th>CSS grade</th>
-                        </tr>
-                    </tfoot>
                 </table>
             </div>
             <!-- /.card-body -->

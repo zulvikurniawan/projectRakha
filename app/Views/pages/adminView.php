@@ -14,12 +14,31 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
+                <?php if (session()->getFlashdata('tambahData')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('tambahData'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('ubahData')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('ubahData'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('hapusData')) : ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('hapusData'); ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
+
                 <a href="/admin/Add" class="btn btn-primary">Tambah Akun</a>
-                <table id="tableAdmin" class="table table-bordered table-striped">
+                <table id="tableAdmin" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">ID</th>
+                            <th scope="col">NIK</th>
                             <th scope="col">Name</th>
                             <th scope="col" class="text-center">Action</th>
                         </tr>
@@ -42,8 +61,8 @@
 
                                     <!-- tombol tanpa modal -->
                                     <a href="/Admin/<?= $a['id_account']; ?>" class="btn btn-sm btn-success">Detail</a>
-                                    <button type="button" class="btn btn-sm btn-primary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-danger">Delete</button>
+                                    <a href="/Admin/edit/<?= $a['id_account']; ?>" type="button" class="btn btn-sm btn-primary">Edit</a>
+                                    <a href="/Admin/delete/<?= $a['id_account']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');">Delete</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
