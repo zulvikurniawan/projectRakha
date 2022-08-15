@@ -8,6 +8,7 @@ namespace App\Controllers;
 class Admin extends BaseController
 {
     protected $AccountModel;
+    protected $JabatanModel;
 
     public function index()
     {
@@ -37,6 +38,7 @@ class Admin extends BaseController
         $data = [
             'title' => 'Add Account | Rakha Program',
             'currentSidebarMenu' => 'admin',
+            'jabatan' => $this->JabatanModel->getJabatan(),
             'validation' => \config\Services::validation()
         ];
 
@@ -45,13 +47,17 @@ class Admin extends BaseController
 
     public function save()
     {
+        // dd($this->request->getVar());
         //validasi create account
         if (!$this->validate([
             'nik' => [
-                'rules' => 'required|is_unique[account.nik]',
+                'rules' => 'required|is_unique[account.nik]|min_length[16]|max_length[16]',
                 'errors' => [
                     'required' => 'NIK harus diisi.',
-                    'is_unique' => 'NIK sudah terdaftar.'
+                    'is_unique' => 'NIK sudah terdaftar.',
+                    'min_length' => 'NIK kurang dari 16 angka.',
+                    'max_length' => 'NIK lebih dari 16 angka.',
+
                 ]
             ],
 
@@ -66,6 +72,13 @@ class Admin extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Password harus diisi.'
+                ]
+            ],
+
+            'id_jabatan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jabatan harus pilih.'
                 ]
             ],
 
@@ -87,10 +100,10 @@ class Admin extends BaseController
             $validation = \config\Services::validation();
             return redirect()->to('/admin/Add')->withInput()->with('validation', $validation);
         }
-
         $this->AccountModel->save([
             'nik' => $this->request->getVar('nik'),
             'nama' => $this->request->getVar('nama'),
+            'id_jabatan' => $this->request->getVar('id_jabatan'),
             'password' => $this->request->getVar('password'),
             'email' => $this->request->getVar('email'),
             'nomor_hp' => $this->request->getVar('nomor_hp'),

@@ -34,65 +34,78 @@
     <div class="register-box">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>Register</b></a>
+                <a href="/login/register" class="h1"><b>Register</b></a>
             </div>
-            <div class="card-body">
-                <p class="login-box-msg">Kecamatan Pakuhaji</p>
+            <!-- form register -->
+            <form action="/login/save" method="post">
+                <?= csrf_field(); ?>
+                <div class="card-body">
+                    <p class="login-box-msg">Kecamatan Pakuhaji</p>
+                    <div class="form-group">
+                        <label for="nik">NIK</label>
+                        <input type="text" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : ''; ?>" id="nik" name="nik" placeholder="Input NIK" autofocus value="<?= old('nik'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('nik'); ?>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input Nama Lengkap" value="<?= old('nama'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('nama'); ?>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" id="password" name="password" placeholder="Input Password" value="<?= old('password'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('password'); ?>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="jabatan">jabatan</label>
+                        <select id="id_jabatan" name="id_jabatan" class="custom-select form-control <?= ($validation->hasError('id_jabatan')) ? 'is-invalid' : ''; ?>">
+                            <option value="" selected hidden>Pilih Jabatan</option>
+                            <?php foreach ($jabatan as $j) : ?>
+                                <option value="<?= $j['id_jabatan']; ?>"><?= $j['nama_jabatan']; ?></option>
+                            <?php endforeach ?>
+                        </select>
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('id_jabatan'); ?>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" id="email" name="email" placeholder="Input email" value="<?= old('email'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('email'); ?>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomor_hp">nomor_hp</label>
+                        <input type="text" class="form-control <?= ($validation->hasError('nomor_hp')) ? 'is-invalid' : ''; ?>" id="nomor_hp" name="nomor_hp" placeholder="Input Nomor Hp" value="<?= old('nomor_hp'); ?>">
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('nomor_hp'); ?>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="foto_profil">Foto Profil</label>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="inputGroupFile022">
+                            <label class="input-group-text fw-bold">Upload</label>
+                        </div>
+                    </div> -->
+                    <div class="form-group text-end mr-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <a href="/login" class="text-center">I already have a membership</a>
+                </div>
+        </div>
+        </form>
 
-                <!-- form register -->
-                <form action="" method="post">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-user"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Full name">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-comment-alt"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-envelope"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="password" name="password" placeholder="Password">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-lock"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="Phone Number">
-                        <div class="input-group-append">
-                            <div class="input-group-text">
-                                <span class="fas fa-comment-alt"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Register</button>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                </form>
-
-                <a href="/login" class="text-center">I already have a membership</a>
-            </div>
-            <!-- /.form-box -->
-        </div><!-- /.card -->
+    </div>
+    <!-- /.form-box -->
+    </div><!-- /.card -->
     </div>
     <!-- /.register-box -->
 

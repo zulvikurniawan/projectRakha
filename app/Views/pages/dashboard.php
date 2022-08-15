@@ -12,7 +12,7 @@
       </div>
       <!-- /.card-header -->
       <div class="card-body">
-        <div class="row justify-content-around">
+        <div class="row justify-content-between">
           <div class="col-3">
             <!-- small card -->
             <div class="small-box bg-danger">
@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-around">
+        <div class="row justify-content-between">
           <div class="col-3">
             <!-- small card -->
             <div class="small-box bg-danger">
@@ -59,7 +59,7 @@
                 <p>Perempuan Lansia</p>
               </div>
               <div class="icon">
-                <i class="fas fa-female"></i>
+                <i class="fas fa-venus"></i>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
                 <p>Perempuan Dewasa</p>
               </div>
               <div class="icon">
-                <i class="fas fa-female"></i>
+                <i class="fas fa-venus"></i>
               </div>
             </div>
           </div>
@@ -83,7 +83,21 @@
                 <p>Anak Perempuan</p>
               </div>
               <div class="icon">
-                <i class="fas fa-female"></i>
+                <i class="fas fa-venus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-3">
+            <!-- small card -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>44</h3>
+                <p>Jumlah Penduduk</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-users"></i>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ class AccountModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nik', 'nama', 'password', 'email', 'nomor_hp', 'foto_profil'];
+    protected $allowedFields = ['nik', 'nama', 'password', 'id_jabatan', 'email', 'nomor_hp', 'foto_profil'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -30,7 +30,22 @@ class AccountModel extends Model
         if ($id_account == false) {
             return $this->findAll();
         }
+        return $this
+            ->select('account.*,nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->first();
+    }
 
-        return $this->where(['id_account' => $id_account])->first();
+    public function getNik($nik = false)
+    {
+
+        if ($nik == false) {
+            return session()->setFlashdata('error', 'nik Tidak Boleh Kosong.');
+        }
+        return $this
+            ->select('account.*,nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['nik' => $nik])
+            ->first();
     }
 }

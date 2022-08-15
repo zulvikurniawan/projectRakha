@@ -36,14 +36,33 @@
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
                 <a href="/login" class="h1"><b>Login</b></a>
+                <?php if (session()->getFlashdata('error')) : ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('error'); ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('success')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('success'); ?>
+                        <span aria-hidden="true">&times;</span>
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('register')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('register'); ?>
+                        </button>
+                    </div>
+                <?php endif; ?>
+
             </div>
             <div class="card-body">
                 <p class="login-box-msg"><b>Kecamatan Pakuhaji</b></p>
 
                 <!-- form login -->
-                <form action="/login" method="post">
+                <form action="/login/proses" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="NIK">
+                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" value="<?= old('nik'); ?>">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
@@ -51,7 +70,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="<?= old('password'); ?>">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>

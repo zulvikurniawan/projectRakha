@@ -11,6 +11,7 @@ use Psr\Log\LoggerInterface;
 
 //jika memakai BaseController namespase berada di sini
 use \App\Models\AccountModel;
+use \App\Models\JabatanModel;
 
 /**
  * Class BaseController
@@ -53,5 +54,6 @@ class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
         session();
         $this->AccountModel = new AccountModel();
+        $this->JabatanModel = new JabatanModel();
     }
 }

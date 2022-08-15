@@ -40,6 +40,18 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="jabatan">jabatan</label>
+                                    <select id="id_jabatan" name="id_jabatan" class="custom-select form-control <?= ($validation->hasError('id_jabatan')) ? 'is-invalid' : ''; ?>">
+                                        <option value="" selected hidden>Pilih Jabatan</option>
+                                        <?php foreach ($jabatan as $j) : ?>
+                                            <option value="<?= $j['id_jabatan']; ?>"><?= $j['nama_jabatan']; ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('id_jabatan'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" id="email" name="email" placeholder="Input email" value="<?= old('email'); ?>">
                                     <div class="invalid-feedback">
@@ -53,16 +65,16 @@
                                         <?= $validation->getError('nomor_hp'); ?>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="foto_profil">Foto Profil</label>
                                     <div class="input-group mb-3">
                                         <input type="file" class="form-control" id="inputGroupFile022">
                                         <label class="input-group-text fw-bold">Upload</label>
                                     </div>
+                                </div> -->
+                                <div class="form-group text-end">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
-                            </div>
-                            <div class="form-group text-end mr-3">
-                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                             <!-- /.card-body -->
                         </form>
