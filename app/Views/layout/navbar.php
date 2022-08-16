@@ -1,3 +1,4 @@
+<?php $user = session()->get('user') ?>
 <!-- Preloader -->
 <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
@@ -15,7 +16,7 @@
     <!-- Right navbar links -->
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link <?= ($currentSidebarMenu == 'profile') ? 'active' : '' ?>" href="/Profile">Profile <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link <?= ($currentSidebarMenu == 'profile') ? 'active' : '' ?>" href="/Profile/<?= $user['id_account']; ?>">Profile <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link <?= ($currentSidebarMenu == 'admin') ? 'active' : '' ?>" href="/Admin">Admin <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="/login">Logout <span class="sr-only">(current)</span></a>
         </div>
@@ -39,7 +40,7 @@
                 <img src="/img/fotoProfil.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="/profile" class="d-block" style="text-decoration:none">Rakha</a>
+                <a href="/Profile/<?= $user['id_account']; ?>" class="d-block" style="text-decoration:none">Rakha</a>
             </div>
         </div>
 

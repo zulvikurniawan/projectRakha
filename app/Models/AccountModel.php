@@ -32,6 +32,7 @@ class AccountModel extends Model
         }
         return $this
             ->select('account.*,nama_jabatan')
+            ->where(['id_account' => $id_account])
             ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
             ->first();
     }

@@ -48,6 +48,7 @@
                         <?php foreach ($account as $a) : ?>
                             <tr>
                                 <th scope="row"><?= $i++; ?></th>
+                                <td><?= $a['id_account']; ?></td>
                                 <td><?= $a['nik']; ?></td>
                                 <td><?= $a['nama']; ?></td>
                                 <td class="text-center">

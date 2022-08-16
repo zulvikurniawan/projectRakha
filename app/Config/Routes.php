@@ -39,6 +39,11 @@ $routes->get('/Admin/(:num)', 'Admin::detail/$1');
 
 $routes->get('/Masyarakat/(:num)', 'Masyarakat::detail/$1');
 
+
+$routes->get('/Profile/(:any)', 'Profile::index/$1');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
