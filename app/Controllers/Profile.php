@@ -8,7 +8,7 @@ class Profile extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Profile | Jayanti Program',
+            'title' => 'Rakha Program | Profile',
             'currentSidebarMenu' => 'profile'
         ];
 
