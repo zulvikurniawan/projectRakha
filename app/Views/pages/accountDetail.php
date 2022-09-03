@@ -8,56 +8,33 @@
     <section class="content">
         <div class="card m-3">
             <div class="card-header">
-                <h2>Detail Account</h2>
+                <h2>Detail Akun</h2>
             </div>
             <!-- /.card-header -->
-            <div class="card-body">
-                <div class="row justify-content-between">
-                    <div class="col-3 m-auto">
-                        <!-- small card -->
-                        <div class="small-box bg-white p-5">
-                            <div class="inner">
-                                <div class="icon m-auto">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-8">
-                        <table class="table table-borderless">
-                            <tr class="fs-5 fw-bold">
-                                <td>Nama</td>
-                                <td>: </td>
-                                <td><?= $admin['nama']; ?></td>
-                            </tr>
-                            <tr class="fs-5 fw-bold">
-                                <td>ID</td>
-                                <td>: </td>
-                                <td><?= $admin['nik']; ?></td>
-                            </tr>
-                            <tr>
-                                <td>Jabatan</td>
-                                <td>: </td>
-                                <td><?= $admin['nama_jabatan']; ?></td>
-                            </tr>
-                            <tr>
-                                <td>Password</td>
-                                <td>: </td>
-                                <td><?= $admin['password']; ?></td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>: </td>
-                                <td><?= $admin['email']; ?></td>
-                            </tr>
-                            <tr>
-                                <td>No. HP</td>
-                                <td>: </td>
-                                <td>0<?= $admin['nomor_hp']; ?></td>
-                            </tr>
-                        </table>
-                    </div>
+
+            <div class="card-body box-profile">
+                <div class="text-center">
+                    <img class="profile-user-img img-fluid img-circle" src="/img/<?= $admin['foto_profil']; ?>" alt="foto_profil">
+                    <h3 class="profile-username"><?= $admin['nama']; ?></h3>
+                    <p class="text-muted"><?= $admin['nik']; ?></p>
                 </div>
+                <ul class="list-group list-group-unbordered mb-3 mx-auto" style="width: 50%;">
+                    <li class="list-group-item">
+                        <b>Jabatan</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['nama_jabatan']; ?></a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Jenis Kelamin</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['jenis_kelamin']; ?></a>
+                    </li>
+                    <li class=" list-group-item">
+                        <b>Passwword</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['password']; ?></a>
+                    </li>
+                    <li class=" list-group-item">
+                        <b>Email</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['email']; ?></a>
+                    </li>
+                    <li class=" list-group-item">
+                        <b>Nomor Hp</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['nomor_hp']; ?></a>
+                    </li>
+                </ul>
             </div>
             <!-- /.card-body -->
             <div class="card-footer text-end">
@@ -77,8 +54,8 @@
 
 <?= $this->endSection(); ?>
 
-//java skript
+<!-- java skript -->
 <?= $this->section('javascript'); ?>
 
 <?= $this->endSection(); ?>
-// akhir java skript
+<!-- akhir java skript -->

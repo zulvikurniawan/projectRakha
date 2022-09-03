@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
     <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
     <!-- SweetAlert2 -->
     <link rel="stylesheet" href="plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
     <!-- Toastr -->
@@ -52,7 +53,7 @@
     <?= $this->renderSection('content'); ?>
 
 
-    <footer class="main-footer"><strong>Program <a href="https://adminlte.io" style="text-decoration:none">Rakha</a>. </strong> All rights reserved.<div class="float-right d-none d-sm-inline-block"><b>Version</b> 3.2.0</div>
+    <footer class="main-footer"><strong>Program <a href="/Dashboard" style="text-decoration:none">SIDEKAT</a></strong>
     </footer>
 
     <!-- Control Sidebar -->
@@ -109,12 +110,6 @@
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.js"></script>
 
-    <!-- AdminLTE for demo purposes -->
-    <script src="dist/js/demo.js"></script>
-
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard.js"></script>
-
     <!-- fontawwesome icon -->
     <script src="https://kit.fontawesome.com/9404e985a1.js" crossorigin="anonymous"></script>
 
@@ -131,7 +126,6 @@
     <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-
 
 
     <?= $this->renderSection('javascript'); ?>

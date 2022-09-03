@@ -1,0 +1,105 @@
+ERROR - 2022-08-25 09:25:35 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2022-08-25 09:25:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+#0 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `account...', Array, false)
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Models\AccountModel.php(50): CodeIgniter\BaseModel->first()
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\login.php(28): App\Models\AccountModel->getNip('199210182022032...')
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\login->proses()
+#7 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+#8 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#11 {main}
+CRITICAL - 2022-08-25 09:31:26 --> The uploaded file has already been moved.
+#0 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\HTTP\Files\UploadedFile.php(133): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(266): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->update('39')
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-25 09:43:28 --> unlink(img/default.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\Users\\XIANGL...', 265, Array)
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(265): unlink('img/default.jpg')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->update('39')
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-25 09:44:20 --> The uploaded file has already been moved.
+#0 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\HTTP\Files\UploadedFile.php(133): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(266): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->update('39')
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-25 09:46:47 --> unlink(img/default.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\Users\\XIANGL...', 265, Array)
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(265): unlink('img/default.jpg')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->update('39')
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-25 09:51:14 --> The uploaded file has already been moved.
+#0 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\HTTP\Files\UploadedFile.php(133): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(266): CodeIgniter\HTTP\Files\UploadedFile->move('img/')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->update('39')
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-25 09:51:45 --> unlink(img/default.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(img/defa...', 'C:\\Users\\XIANGL...', 266, Array)
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(266): unlink('img/default.jpg')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->update('39')
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#7 {main}
+CRITICAL - 2022-08-25 10:10:27 --> Undefined variable: admin
+#0 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Views\layout\navbar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 40, Array)
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(424): CodeIgniter\View\View->render('layout/navbar', NULL, true)
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Views\layout\template.php(50): CodeIgniter\View\View->include('layout/navbar')
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(226): CodeIgniter\View\View->render('layout/template', Array, true)
+#8 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#9 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(22): view('pages/adminView', Array)
+#10 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#11 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#12 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#15 {main}
+CRITICAL - 2022-08-25 10:10:35 --> Undefined variable: admin
+#0 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Views\layout\navbar.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 40, Array)
+#1 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(424): CodeIgniter\View\View->render('layout/navbar', NULL, true)
+#4 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Views\layout\template.php(50): CodeIgniter\View\View->include('layout/navbar')
+#5 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#6 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\View\View.php(226): CodeIgniter\View\View->render('layout/template', Array, true)
+#8 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Common.php(1089): CodeIgniter\View\View->render('pages/adminView', Array, true)
+#9 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\app\Controllers\Admin.php(22): view('pages/adminView', Array)
+#10 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(832): App\Controllers\Admin->index()
+#11 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#12 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\Users\XIANGLU\Desktop\project kak eka\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#15 {main}

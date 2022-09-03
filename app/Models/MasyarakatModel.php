@@ -14,7 +14,7 @@ class MasyarakatModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nik', 'nama_lengkap', 'tempat_lahir', 'tanggal_lahir', 'jenis_kelamin', 'agama', 'status_perkawinan', 'pekerjaan', 'kewarganegaraan', 'alamat_lengkap', 'file'];
+    protected $allowedFields = ['nik', 'nama', 'tempat_lahir', 'tanggal_lahir', 'jenis_kelamin', 'agama', 'status_perkawinan', 'pekerjaan', 'kewarganegaraan', 'alamat', 'foto_ktp'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -30,7 +30,13 @@ class MasyarakatModel extends Model
         if ($id_masyarakat == false) {
             return $this->findAll();
         }
-
         return $this->where(['id_masyarakat' => $id_masyarakat])->first();
+    }
+
+    public function getTotalDataMasyarakat()
+    {
+        return $this
+            ->select('count(id_masyarakat) as totalDataMasyarakat')
+            ->first();
     }
 }

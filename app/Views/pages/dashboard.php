@@ -12,37 +12,37 @@
       </div>
       <!-- /.card-header -->
       <div class="card-body">
-        <div class="row justify-content-between">
-          <div class="col-3">
+        <div class="row justify-content-around">
+          <div class="col-4">
             <!-- small card -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>44</h3>
-                <p>Laki-laki Lansia</p>
+                <h4>Laki - Laki Lansia</h4>
+                <h4>44</h4>
               </div>
               <div class="icon">
                 <i class="fas fa-mars"></i>
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-4">
+            <!-- small card -->
+            <div class="small-box bg-warning text-white">
+              <div class="inner">
+                <h4>Laki - Laki Dewasa</h4>
+                <h4>44</h4>
+              </div>
+              <div class="icon">
+                <i class="fas fa-mars"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
             <!-- small card -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>44</h3>
-                <p>Laki-laki Dewasa</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-mars"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <!-- small card -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>44</h3>
-                <p>Anak Laki-laki</p>
+                <h4>Anak Laki - Laki</h4>
+                <h4>44</h4>
               </div>
               <div class="icon">
                 <i class="fas fa-mars"></i>
@@ -50,37 +50,37 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-between">
-          <div class="col-3">
+        <div class="row justify-content-around">
+          <div class="col-4">
             <!-- small card -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>44</h3>
-                <p>Perempuan Lansia</p>
+                <h4>Perempuan Lansia</h4>
+                <h4>44</h4>
               </div>
               <div class="icon">
                 <i class="fas fa-venus"></i>
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-4">
+            <!-- small card -->
+            <div class="small-box bg-warning text-white">
+              <div class="inner">
+                <h4>Perempuan Dewasa</h4>
+                <h4>44</h4>
+              </div>
+              <div class="icon">
+                <i class="fas fa-venus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
             <!-- small card -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>44</h3>
-                <p>Perempuan Dewasa</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-venus"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <!-- small card -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>44</h3>
-                <p>Anak Perempuan</p>
+                <h4>Anak Perempuan</h4>
+                <h4>44</h4>
               </div>
               <div class="icon">
                 <i class="fas fa-venus"></i>
@@ -88,13 +88,13 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-between">
-          <div class="col-3">
+        <div class="row justify-content-around">
+          <div class="col-4">
             <!-- small card -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-primary">
               <div class="inner">
-                <h3>44</h3>
-                <p>Jumlah Penduduk</p>
+                <h4>Jumlah Penduduk</h4>
+                <h4>44</h4>
               </div>
               <div class="icon">
                 <i class="fas fa-users"></i>
@@ -102,10 +102,9 @@
             </div>
           </div>
         </div>
+        <!-- /.card-body -->
       </div>
-      <!-- /.card-body -->
-    </div>
-    <!-- /.card -->
+      <!-- /.card -->
 
   </section>
   <!-- /.content -->
@@ -114,8 +113,8 @@
 
 <?= $this->endSection(); ?>
 
-//java skript
+<!-- java skript -->
 <?= $this->section('javascript'); ?>
 
 <?= $this->endSection(); ?>
-// akhir java skript
+<!-- akhir java skript -->

@@ -1,0 +1,26 @@
+CRITICAL - 2022-08-29 10:59:31 --> number_format() expects parameter 1 to be float, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'number_format()...', 'C:\\Users\\user\\D...', 67, Array)
+#1 C:\Users\user\Desktop\sidekat\app\Views\pages\konstruksiView.php(67): number_format('Rp. 3.100.000.0...', 2, ',', '.')
+#2 C:\Users\user\Desktop\sidekat\system\View\View.php(210): include('C:\\Users\\user\\D...')
+#3 C:\Users\user\Desktop\sidekat\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\Users\user\Desktop\sidekat\system\Common.php(1089): CodeIgniter\View\View->render('pages/konstruks...', Array, true)
+#5 C:\Users\user\Desktop\sidekat\app\Controllers\Konstruksi.php(17): view('pages/konstruks...', Array)
+#6 C:\Users\user\Desktop\sidekat\system\CodeIgniter.php(832): App\Controllers\Konstruksi->index()
+#7 C:\Users\user\Desktop\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konstruksi))
+#8 C:\Users\user\Desktop\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Desktop\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Desktop\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\user\\D...')
+#11 {main}
+CRITICAL - 2022-08-29 11:00:21 --> number_format() expects parameter 1 to be float, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'number_format()...', 'C:\\Users\\user\\D...', 67, Array)
+#1 C:\Users\user\Desktop\sidekat\app\Views\pages\konstruksiView.php(67): number_format('Rp. 3.100.000.0...', 2, ',', '.')
+#2 C:\Users\user\Desktop\sidekat\system\View\View.php(210): include('C:\\Users\\user\\D...')
+#3 C:\Users\user\Desktop\sidekat\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\Users\user\Desktop\sidekat\system\Common.php(1089): CodeIgniter\View\View->render('pages/konstruks...', Array, true)
+#5 C:\Users\user\Desktop\sidekat\app\Controllers\Konstruksi.php(17): view('pages/konstruks...', Array)
+#6 C:\Users\user\Desktop\sidekat\system\CodeIgniter.php(832): App\Controllers\Konstruksi->index()
+#7 C:\Users\user\Desktop\sidekat\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Konstruksi))
+#8 C:\Users\user\Desktop\sidekat\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Desktop\sidekat\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Desktop\sidekat\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\user\\D...')
+#11 {main}

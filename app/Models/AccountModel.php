@@ -14,7 +14,7 @@ class AccountModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nik', 'nama', 'password', 'id_jabatan', 'email', 'nomor_hp', 'foto_profil'];
+    protected $allowedFields = ['nik', 'nama', 'password', 'id_jabatan', 'email', 'jenis_kelamin', 'nomor_hp', 'foto_profil'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -41,7 +41,7 @@ class AccountModel extends Model
     {
 
         if ($nik == false) {
-            return session()->setFlashdata('error', 'nik Tidak Boleh Kosong.');
+            return session()->setFlashdata('error', 'NIK Tidak Boleh Kosong.');
         }
         return $this
             ->select('account.*,nama_jabatan')

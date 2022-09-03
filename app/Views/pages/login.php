@@ -35,29 +35,31 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/login" class="h1"><b>Login</b></a>
+                <a href="/login" class="h1"><b>SIDEKAT</b></a>
                 <?php if (session()->getFlashdata('error')) : ?>
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <?= session()->getFlashdata('error'); ?>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     </div>
                 <?php endif; ?>
                 <?php if (session()->getFlashdata('success')) : ?>
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         <?= session()->getFlashdata('success'); ?>
-                        <span aria-hidden="true">&times;</span>
                     </div>
                 <?php endif; ?>
                 <?php if (session()->getFlashdata('register')) : ?>
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         <?= session()->getFlashdata('register'); ?>
-                        </button>
+                    </div>
+                <?php endif; ?>
+                <?php if (session()->getFlashdata('logout')) : ?>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <?= session()->getFlashdata('logout'); ?>
                     </div>
                 <?php endif; ?>
 
             </div>
             <div class="card-body">
-                <p class="login-box-msg"><b>Kecamatan Pakuhaji</b></p>
+                <p class="login-box-msg"><b>LOGIN</b></p>
 
                 <!-- form login -->
                 <form action="/login/proses" method="post">
@@ -86,7 +88,7 @@
                 <!-- akhir form login -->
 
                 <p class="mb-0">
-                    <a href="/login/register" class="text-center">Register a new membership</a>
+                    <a href="/login/register" class="text-center">Daftar Anggota Baru</a>
                 </p>
             </div>
             <!-- /.card-body -->

@@ -165,7 +165,7 @@ class Filters
         foreach ($this->filtersClass[$position] as $className) {
             $class = new $className();
 
-            if (! $class instanceof FilterInterface) {
+            if (!$class instanceof FilterInterface) {
                 throw FilterException::forIncorrectInterface(get_class($class));
             }
 
@@ -232,7 +232,8 @@ class Filters
         $this->processFilters($uri);
 
         // Set the toolbar filter to the last position to be executed
-        if (in_array('toolbar', $this->filters['after'], true)
+        if (
+            in_array('toolbar', $this->filters['after'], true)
             && ($count = count($this->filters['after'])) > 1
             && $this->filters['after'][$count - 1] !== 'toolbar'
         ) {
@@ -294,11 +295,11 @@ class Filters
     {
         $alias = $alias ?? md5($class);
 
-        if (! isset($this->config->{$section})) {
+        if (!isset($this->config->{$section})) {
             $this->config->{$section} = [];
         }
 
-        if (! isset($this->config->{$section}[$when])) {
+        if (!isset($this->config->{$section}[$when])) {
             $this->config->{$section}[$when] = [];
         }
 
@@ -336,7 +337,7 @@ class Filters
 
         if (class_exists($name)) {
             $this->config->aliases[$name] = $name;
-        } elseif (! array_key_exists($name, $this->config->aliases)) {
+        } elseif (!array_key_exists($name, $this->config->aliases)) {
             throw FilterException::forNoAlias($name);
         }
 
@@ -346,7 +347,7 @@ class Filters
             $this->argumentsClass[$className] = $this->arguments[$name] ?? null;
         }
 
-        if (! isset($this->filters[$when][$name])) {
+        if (!isset($this->filters[$when][$name])) {
             $this->filters[$when][]    = $name;
             $this->filtersClass[$when] = array_merge($this->filtersClass[$when], $classNames);
         }
@@ -393,7 +394,7 @@ class Filters
      */
     protected function processGlobals(?string $uri = null)
     {
-        if (! isset($this->config->globals) || ! is_array($this->config->globals)) {
+        if (!isset($this->config->globals) || !is_array($this->config->globals)) {
             return;
         }
 
@@ -433,7 +434,7 @@ class Filters
      */
     protected function processMethods()
     {
-        if (! isset($this->config->methods) || ! is_array($this->config->methods)) {
+        if (!isset($this->config->methods) || !is_array($this->config->methods)) {
             return;
         }
 
@@ -452,7 +453,7 @@ class Filters
      */
     protected function processFilters(?string $uri = null)
     {
-        if (! isset($this->config->filters) || ! $this->config->filters) {
+        if (!isset($this->config->filters) || !$this->config->filters) {
             return;
         }
 
@@ -489,7 +490,7 @@ class Filters
                 $alias = $rules;
             }
 
-            if (! array_key_exists($alias, $this->config->aliases)) {
+            if (!array_key_exists($alias, $this->config->aliases)) {
                 throw FilterException::forNoAlias($alias);
             }
 

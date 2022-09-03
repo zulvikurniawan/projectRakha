@@ -33,7 +33,7 @@
                     </div>
                 <?php endif; ?>
 
-                <a href="/admin/Add" class="btn btn-primary">Tambah Akun</a>
+                <a href="/admin/Add" class="btn btn-primary mb-3">Tambah Akun</a>
                 <table id="tableAdmin" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
@@ -48,7 +48,7 @@
                         <?php foreach ($account as $a) : ?>
                             <tr>
                                 <th scope="row"><?= $i++; ?></th>
-                                <td><?= $a['id_account']; ?></td>
+
                                 <td><?= $a['nik']; ?></td>
                                 <td><?= $a['nama']; ?></td>
                                 <td class="text-center">
@@ -82,7 +82,7 @@
 
 <?= $this->endSection(); ?>
 
-//java skript
+<!-- java skript -->
 <?= $this->section('javascript'); ?>
 <script>
     $(function() {
@@ -90,13 +90,16 @@
             "searching": true,
             "responsive": true,
             "lengthChange": false,
+            "lengthMenu": [
+                [10, 25, 50, -1],
+                [10, 25, 50, "All"]
+            ],
             "autoWidth": false,
             "paging": true,
             "info": true,
             "ordering": true,
-            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     });
 </script>
 <?= $this->endSection(); ?>
-// akhir java skript
+<!-- akhir java skript -->

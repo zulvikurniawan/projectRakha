@@ -5,3 +5,16 @@
 .container-fluid{
     border-radius: 5px;
 }
+
+div.dataTables_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table-sm-px > thead > tr > th {
+    padding: 5px!important;
+}
+.table-sm-px > tbody > tr > td
+{
+  padding: 5px!important;
+}

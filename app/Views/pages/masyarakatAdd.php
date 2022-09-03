@@ -15,39 +15,119 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="/Masyarakat/save" method="post">
+                        <form action="/Masyarakat/save" method="post" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="nik">NIK</label>
-                                    <input type="nik" class="form-control" id="nik" name="nik" placeholder="Input NIK">
+                                    <input type="text" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : ''; ?>" id="nik" name="nik" placeholder="Input NIK" autofocus value="<?= old('nik'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('nik'); ?>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <label for="nama">Nama Lengkap</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input Nama Lengkap" value="<?= old('nama'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('nama'); ?>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputFile">File input</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Upload</span>
+                                    <label for="tempat_lahir">Tempat Lahir</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : ''; ?>" id="tempat_lahir" name="tempat_lahir" placeholder="Input Tempat Lahir" value="<?= old('tempat_lahir'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('tempat_lahir'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tanggal_lahir">Tanggal Lahir</label>
+                                    <input type="date" class="form-control <?= ($validation->hasError('tanggal_lahir')) ? 'is-invalid' : ''; ?>" id="tanggal_lahir" name="tanggal_lahir" placeholder="Input Tempat Lahir" value="<?= old('tanggal_lahir'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('tanggal_lahir'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                                    <input class="form-check-input  <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : ''; ?>" type="radio" name="jenis_kelamin" id="jenis_kelamin" value="" disabled hidden checked <?= (old('jenis_kelamin') == '') ? 'checked' : ''; ?>>
+                                    <div class="form-check">
+                                        <input class="form-check-input  <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : ''; ?>" type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Laki-laki" <?= (old('jenis_kelamin') == 'Laki-laki') ? 'checked' : ''; ?>>
+                                        <label class="form-check-label" for="jenis_kelamin">
+                                            Laki-laki
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input  <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : ''; ?>" type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Perempuan" <?= (old('jenis_kelamin') == 'Perempuan') ? 'checked' : ''; ?>>
+                                        <label class="form-check-label" for="jenis_kelamin">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('jenis_kelamin'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="agama">Agama</label>
+                                    <select id="agama" name="agama" class="custom-select form-control <?= ($validation->hasError('agama')) ? 'is-invalid' : ''; ?>">
+                                        <option value="" selected hidden>Pilih Agama</option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Kristen Protestan">Kristen Protestan</option>
+                                        <option value="Katolik">Katolik</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Buddha">Buddha</option>
+                                        <option value="Konghucu">Konghucu</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('agama'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="status_perkawinan">Status Perkawinan</label>
+                                    <select id="status_perkawinan" name="status_perkawinan" class="custom-select form-control <?= ($validation->hasError('status_perkawinan')) ? 'is-invalid' : ''; ?>">
+                                        <option value="" selected hidden>Pilih Status Perkawinan</option>
+                                        <option value="Belum Kawin">Belum Kawin</option>
+                                        <option value="Kawin">Kawin</option>
+                                        <option value="Cerai Hidup">Cerai Hidup</option>
+                                        <option value="Cerai Mati">Cerai Mati</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('status_perkawinan'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pekerjaan">Pekerjaan</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('pekerjaan')) ? 'is-invalid' : ''; ?>" id="pekerjaan" name="pekerjaan" placeholder="Input Pekerjaan" value="<?= old('pekerjaan'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('pekerjaan'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="kewarganegaraan">Kewarganegaraan</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('kewarganegaraan')) ? 'is-invalid' : ''; ?>" id="kewarganegaraan" name="kewarganegaraan" placeholder="Input Kewarganegaraan" value="<?= old('kewarganegaraan'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('kewarganegaraan'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="alamat">Alamat</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : ''; ?>" id="alamat" name="alamat" placeholder="Input Alamat" value="<?= old('alamat'); ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('alamat'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="foto_ktp">Foto KTP</label>
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control <?= ($validation->hasError('foto_ktp')) ? 'is-invalid' : ''; ?>" id="foto_ktp" name="foto_ktp">
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('foto_ktp'); ?>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                <div class="form-group text-end">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                             <!-- /.card-body -->
-
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
                         </form>
                     </div>
                     <!-- /.card -->
@@ -65,8 +145,24 @@
 
 <?= $this->endSection(); ?>
 
-//java skript
+<!-- java skript -->
 <?= $this->section('javascript'); ?>
+<!-- //membuat img preview pada inputann  -->
+<!-- <script>
+    function previewImg() {
+        // mengambil inputan foto profil
+        const fotoProfil = document.querySelector('#foto_ktp');
+        const imgPreview = document.querySelector('.img-preview');
 
+        // menggati privew img
+        const fileFotoProfile = new FileReader();
+        fileFotoProfile.readAsDataURL(fotoProfil);
+
+        // simpan gambar ke dalam privew imgg
+        fileFotoProfile.onload = function(e) {
+            imgPreview.src = e.target.result;
+        }
+    }
+</script> -->
 <?= $this->endSection(); ?>
-// akhir java skript
+<!-- akhir java skript -->
