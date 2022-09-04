@@ -20,7 +20,7 @@
 
             <div class="card-body box-profile">
                 <div class="text-center">
-                    <img class="profile-user-img img-fluid img-circle" src="/img/<?= $admin['foto_profil']; ?>" alt="foto_profil">
+                    <img class="profile-user-img img-fluid" src="/img/<?= $admin['foto_profil']; ?>" alt="foto_profil">
                     <h3 class="profile-username"><?= $admin['nama']; ?></h3>
                     <p class="text-muted"><?= $admin['nik']; ?></p>
                 </div>

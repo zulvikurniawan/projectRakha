@@ -9,11 +9,12 @@ class Masyarakat extends BaseController
 
     public function index()
     {
+        $status = 'pending';
         $data = [
             'title' => 'Masyarakat | KECAMATAN PAKUHAJI',
             'SidebarMenuOpen' => 'masyarakat',
             'SidebarMenuActive' => 'masyarakat',
-            'masyarakat' => $this->MasyarakatModel->getMasyarakat()
+            'masyarakatStatus' => $this->MasyarakatModel->getMasyarakatStatus($status)
         ];
         $validation = \config\Services::validation();
         return view('pages/masyarakatView', $data);
@@ -156,11 +157,61 @@ class Masyarakat extends BaseController
             'pekerjaan' => $this->request->getVar('pekerjaan'),
             'kewarganegaraan' => $this->request->getVar('kewarganegaraan'),
             'alamat' => $this->request->getVar('alamat'),
-            'foto_ktp' => $namaFoto
+            'foto_ktp' => $namaFoto,
+            'status' => 'Pending'
         ]);
 
         session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');
         return redirect()->to('/Masyarakat');
+    }
+
+    //menampilkan data approval 
+    public function approval()
+    {
+        $status = 'pending';
+        $data = [
+            'title' => 'Masyarakat | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'approval',
+            'SidebarMenuActive' => 'approval',
+            'masyarakatStatus' => $this->MasyarakatModel->getMasyarakatStatus($status)
+        ];
+        return view('pages/masyarakatApproval', $data);
+    }
+
+    //proses ACC
+    public function acc($id)
+    {
+        $this->MasyarakatModel->save([
+            'id_masyarakat' => $id,
+            'status' => 'approve',
+            'keterangan' => 'Selesai'
+        ]);
+        session()->setFlashdata('tambahData', 'Data berhasil diapprove.');
+        return redirect()->to('/Masyarakat/approval');
+    }
+
+    //form Reject
+    public function formReject($id)
+    {
+        $data = [
+            'title' => 'Masyarakat | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'masyarakat',
+            'SidebarMenuActive' => 'masyarakat',
+            'masyarakat' => $this->MasyarakatModel->getMasyarakat($id)
+        ];
+        return view('pages/masyarakatReject', $data);
+    }
+
+    //Proses reject
+    public function reject($id_masyarakat)
+    {
+        $this->MasyarakatModel->save([
+            'id_masyarakat' => $id_masyarakat,
+            'status' => 'reject',
+            'keterangan' => $this->request->getVar('keterangan')
+        ]);
+        session()->setFlashdata('tambahData', 'Data berhasil reject.');
+        return redirect()->to('/Masyarakat/approval');
     }
 
     //method untuk function hapus masyarakat
@@ -325,5 +376,17 @@ class Masyarakat extends BaseController
 
         session()->setFlashdata('ubahData', 'Data berhasil diubah.');
         return redirect()->to('/Masyarakat');
+    }
+
+    public function report()
+    {
+        $data = [
+            'title' => 'Report | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'report',
+            'SidebarMenuActive' => 'report',
+            'masyarakat' => $this->MasyarakatModel->getMasyarakat()
+        ];
+        $validation = \config\Services::validation();
+        return view('pages/masyarakatReport', $data);
     }
 }

@@ -45,6 +45,12 @@ $routes->get('/Masyarakat/edit/(:num)', 'Masyarakat::edit/$1');
 $routes->delete('/Masyarakat/(:num)', 'Masyarakat::delete/$1');
 $routes->get('/Masyarakat/(:num)', 'Masyarakat::detail/$1');
 
+$routes->get('/Masyarakat/acc/(:num)', 'Masyarakat::acc/$1');
+$routes->get('/Masyarakat/reject/(:num)', 'Masyarakat::formReject/$1');
+$routes->post('/Masyarakat/reject/(:num)', 'Masyarakat::reject/$1');
+
+
+
 
 
 

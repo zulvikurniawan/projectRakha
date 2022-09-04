@@ -32,8 +32,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 <?php endif; ?>
-
-                <a href="/Masyarakat/Add" class="btn btn-primary mb-3">Tambah Data Masyarakat</a>
                 <table id="tableMasyarakat" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
@@ -64,6 +62,8 @@
 
                                     <!-- tombol tanpa modal -->
                                     <a href="/Masyarakat/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-warning">Detail</a>
+                                    <a href="/Masyarakat/acc/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-success">Approve</a>
+                                    <a href="/Masyarakat/reject/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-danger">Reject</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

@@ -1,0 +1,138 @@
+CRITICAL - 2022-09-04 09:00:26 --> Undefined variable: user
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\pages\masyarakatView.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 56, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/masyaraka...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Masyarakat.php(19): view('pages/masyaraka...', Array)
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->index()
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-09-04 09:14:05 --> Cannot redeclare App\Controllers\Masyarakat::index()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-09-04 09:14:18 --> Invalid file: pages/masyarakatApproval.php
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/masyaraka...')
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/masyaraka...', Array, true)
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Masyarakat.php(339): view('pages/masyaraka...', Array)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#8 {main}
+CRITICAL - 2022-09-04 09:23:40 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:31:03 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:32:07 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:32:19 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:37:46 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:38:34 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:39:51 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:39:52 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:39:53 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:40:34 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:46:45 --> Too few arguments to function App\Controllers\Masyarakat::approval(), 0 passed in C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#5 {main}
+CRITICAL - 2022-09-04 09:48:29 --> Undefined variable: masyarakat
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\pages\masyarakatApproval.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 47, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/masyaraka...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Masyarakat.php(177): view('pages/masyaraka...', Array)
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->approval()
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-09-04 10:05:15 --> Undefined variable: validation
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\pages\masyarakatReject.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 23, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/masyaraka...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Masyarakat.php(201): view('pages/masyaraka...', Array)
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->formReject('3')
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
+CRITICAL - 2022-09-04 10:47:50 --> Undefined variable: masyarakat
+#0 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Views\pages\masyarakatView.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Users\\XIANGL...', 49, Array)
+#1 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(210): include('C:\\Users\\XIANGL...')
+#2 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Common.php(1089): CodeIgniter\View\View->render('pages/masyaraka...', Array, true)
+#4 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\app\Controllers\Masyarakat.php(20): view('pages/masyaraka...', Array)
+#5 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(832): App\Controllers\Masyarakat->index()
+#6 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Masyarakat))
+#7 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\XIANGLU\Desktop\Rakha\projectRakha\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\XIANGL...')
+#10 {main}
