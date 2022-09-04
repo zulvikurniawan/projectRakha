@@ -9,12 +9,11 @@ class Masyarakat extends BaseController
 
     public function index()
     {
-        $status = 'pending';
         $data = [
-            'title' => 'Masyarakat | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'masyarakat',
-            'SidebarMenuActive' => 'masyarakat',
-            'masyarakatStatus' => $this->MasyarakatModel->getMasyarakatStatus($status)
+            'title' => 'Report | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'report',
+            'SidebarMenuActive' => 'report',
+            'masyarakat' => $this->MasyarakatModel->getMasyarakat()
         ];
         $validation = \config\Services::validation();
         return view('pages/masyarakatView', $data);

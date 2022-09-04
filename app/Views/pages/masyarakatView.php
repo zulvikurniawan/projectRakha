@@ -41,18 +41,20 @@
                             <th scope="col">NIK</th>
                             <th scope="col">Name</th>
                             <th scope="col">Status</th>
+                            <th scope="col">Keterangan</th>
                             <th scope="col" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $i = 1; ?>
-                        <?php foreach ($masyarakatStatus as $m) : ?>
+                        <?php foreach ($masyarakat as $m) : ?>
                             <tr>
                                 <th scope="row"><?= $i++; ?></th>
 
                                 <td><?= $m['nik']; ?></td>
                                 <td><?= $m['nama']; ?></td>
                                 <td><?= $m['status']; ?></td>
+                                <td><?= $m['keterangan']; ?></td>
                                 <td class="text-center">
                                     <!-- tombol jika menggunakan modal -->
                                     <!-- <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#detailAccountModal">

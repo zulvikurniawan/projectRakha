@@ -36,7 +36,7 @@
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="info ml-4">
+            <div class="info">
                 <a href="/Profile/<?= $user['id_account']; ?>" class="d-block" style="text-decoration:none"><?= $user['nama']; ?></a>
             </div>
         </div>
