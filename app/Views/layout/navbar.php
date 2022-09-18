@@ -55,13 +55,30 @@
                     </a>
                 </li>
                 <?php if ($user['id_jabatan'] == 4) : ?>
-                    <li class="nav-item mb-3">
-                        <a href="/Admin" class="nav-link <?= ($SidebarMenuOpen == 'admin') ? 'active' : '' ?>">
+                    <li class="nav-item mb-3 <?= ($SidebarMenuOpen == 'admin' || $SidebarMenuOpen == 'adminStaff') ? 'menu-open' : '' ?>">
+                        <a href="" class="nav-link <?= ($SidebarMenuActive == 'admin' || $SidebarMenuActive == 'adminStaff') ? 'active' : '' ?>">
                             <i class="nav-icon fa-solid fa-file-pen"></i>
                             <p>
                                 Admin
+                                <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
+                        <ul class="nav nav-treeview">
+                            <?php if ($user['level'] == 0) : ?>
+                                <li class="nav-item">
+                                    <a href="/Admin" class="nav-link <?= ($SidebarMenuActive == 'admin') ? 'active' : '' ?>">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data RT</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/AdminStaff" class="nav-link <?= ($SidebarMenuActive == 'adminStaff') ? 'active' : '' ?>">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data Staff Kecamatan</p>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                        </ul>
                     </li>
                 <?php endif; ?>
 

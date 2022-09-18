@@ -37,6 +37,10 @@ $routes->get('/Admin/edit/(:num)', 'Admin::edit/$1');
 $routes->delete('/Admin/(:num)', 'Admin::delete/$1');
 $routes->get('/Admin/(:num)', 'Admin::detail/$1');
 
+$routes->get('/AdminStaff/edit/(:num)', 'AdminStaff::edit/$1');
+$routes->delete('/AdminStaff/(:num)', 'AdminStaff::delete/$1');
+$routes->get('/AdminStaff/(:num)', 'AdminStaff::detail/$1');
+
 $routes->get('/Profile/edit/(:num)', 'Profile::edit/$1');
 $routes->delete('/Profile/(:num)', 'Profile::delete/$1');
 $routes->get('/Profile/(:num)', 'Profile::index/$1');

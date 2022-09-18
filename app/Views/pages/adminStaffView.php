@@ -64,9 +64,9 @@
                                 </button> -->
 
                                     <!-- tombol tanpa modal -->
-                                    <a href="/Admin/<?= $a['id_account']; ?>" class="btn btn-sm btn-success">Detail</a>
-                                    <a href="/Admin/edit/<?= $a['id_account']; ?>" type="button" class="btn btn-sm btn-warning">Edit</a>
-                                    <a href="/Admin/delete/<?= $a['id_account']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');">Delete</a>
+                                    <a href="/AdminStaff/<?= $a['id_account']; ?>" class="btn btn-sm btn-success">Detail</a>
+                                    <a href="/AdminStaff/edit/<?= $a['id_account']; ?>" type="button" class="btn btn-sm btn-warning">Edit</a>
+                                    <a href="/AdminStaff/delete/<?= $a['id_account']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah anda yakin?');">Delete</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

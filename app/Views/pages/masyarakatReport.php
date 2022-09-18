@@ -10,7 +10,7 @@
     <section class="content">
         <div class="card m-3">
             <div class="card-header">
-                <h2>Daftar Data Masyarakat</h2>
+                <h2>Report</h2>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -19,7 +19,21 @@
                         <tr>
                             <th scope="col">No.</th>
                             <th scope="col">NIK</th>
-                            <th scope="col">Name</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Tempat Lahir</th>
+                            <th scope="col">Tanggal Lahir</th>
+                            <th scope="col">Jenis Kelamin</th>
+                            <th scope="col">Agama</th>
+                            <th scope="col">Status Perkawinan</th>
+                            <th scope="col">Pekerjaan</th>
+                            <th scope="col">Kewarganegaraan</th>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">RT</th>
+                            <th scope="col">RW</th>
+                            <th scope="col">Kelurahan / Desa</th>
+                            <th scope="col">Kecamatan</th>
+                            <th scope="col">Kabupaten / kota</th>
+                            <th scope="col">Provinsi</th>
                             <th scope="col">Status</th>
                             <th scope="col">Keterangan</th>
                         </tr>
@@ -31,6 +45,20 @@
                                 <th scope="row"><?= $i++; ?></th>
                                 <td><?= $m['nik']; ?></td>
                                 <td><?= $m['nama']; ?></td>
+                                <td><?= $m['tempat_lahir']; ?></td>
+                                <td><?= $m['tanggal_lahir']; ?></td>
+                                <td><?= $m['jenis_kelamin']; ?></td>
+                                <td><?= $m['agama']; ?></td>
+                                <td><?= $m['status_perkawinan']; ?></td>
+                                <td><?= $m['pekerjaan']; ?></td>
+                                <td><?= $m['kewarganegaraan']; ?></td>
+                                <td><?= $m['alamat']; ?></td>
+                                <td><?= $m['rt']; ?></td>
+                                <td><?= $m['rw']; ?></td>
+                                <td><?= $m['kelurahan_desa']; ?></td>
+                                <td><?= $m['kecamatan']; ?></td>
+                                <td><?= $m['kabupaten_kota']; ?></td>
+                                <td><?= $m['provinsi']; ?></td>
                                 <td><?= $m['status']; ?></td>
                                 <td><?= $m['keterangan']; ?></td>
                             </tr>
@@ -65,11 +93,11 @@
             "searching": true,
             "ordering": true,
             "info": true,
-            "responsive": true,
+            "responsive": false,
             "scrollX": true,
             //tambahan fitur tombol "colvis", "copy", "csv",
-            "buttons": ["excel", "pdf", "print"],
-            dom: "<'row'<'col-md-4'l><'col-md-4'B><'col-md-4'f>>" + "<'row'<'col-md-12'tr>>" + "<'row'<'col-md-5'i><'col-md-7'p>>"
+            "buttons": ["pdf", "print"],
+            dom: "<'row'<'col-md-2'l><'col-md-6'B><'col-md-4'f>>" + "<'row'<'col-md-12'tr>>" + "<'row'<'col-md-5'i><'col-md-7'p>>"
         }).buttons().container().appendTo('#tableMasyarakat_wrapper .col-sm-4:eq(0)');
     });
 </script>

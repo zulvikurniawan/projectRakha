@@ -18,7 +18,7 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <h4>Laki - Laki Lansia</h4>
-                <h4>44</h4>
+                <h4><?= $summary['0']['lansia']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-mars"></i>
@@ -30,7 +30,7 @@
             <div class="small-box bg-warning text-white">
               <div class="inner">
                 <h4>Laki - Laki Dewasa</h4>
-                <h4>44</h4>
+                <h4><?= $summary['0']['dewasa']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-mars"></i>
@@ -42,7 +42,7 @@
             <div class="small-box bg-success">
               <div class="inner">
                 <h4>Anak Laki - Laki</h4>
-                <h4>44</h4>
+                <h4><?= $summary['0']['anak_anak']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-mars"></i>
@@ -56,7 +56,7 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <h4>Perempuan Lansia</h4>
-                <h4>44</h4>
+                <h4><?= $summary['0']['lansia']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-venus"></i>
@@ -68,7 +68,7 @@
             <div class="small-box bg-warning text-white">
               <div class="inner">
                 <h4>Perempuan Dewasa</h4>
-                <h4>44</h4>
+                <h4><?= $summary['1']['dewasa']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-venus"></i>
@@ -80,7 +80,7 @@
             <div class="small-box bg-success">
               <div class="inner">
                 <h4>Anak Perempuan</h4>
-                <h4>44</h4>
+                <h4><?= $summary['1']['anak_anak']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-venus"></i>
@@ -91,10 +91,10 @@
         <div class="row justify-content-around">
           <div class="col-4">
             <!-- small card -->
-            <div class="small-box bg-primary">
+            <div class="small-box bg-secondary">
               <div class="inner">
                 <h4>Jumlah Penduduk</h4>
-                <h4>44</h4>
+                <h4><?= $total; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-users"></i>

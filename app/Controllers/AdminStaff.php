@@ -30,7 +30,7 @@ class AdminStaff extends BaseController
             'title' => 'Detail Account Staff | KECAMATAN PAKUHAJI',
             'SidebarMenuOpen' => 'adminStaff',
             'SidebarMenuActive' => 'adminStaff',
-            'admin' => $this->AccountModel->getStaff($id_account)
+            'admin' => $this->AccountModel->getAdmin($id_account)
         ];
 
         return view('pages/accountStaffDetail', $data);
@@ -109,6 +109,34 @@ class AdminStaff extends BaseController
                 ]
             ],
 
+            'alamat' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Alamat harus diisi.'
+                ]
+            ],
+
+            'rt' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RT harus diisi.'
+                ]
+            ],
+
+            'rw' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RW harus diisi.'
+                ]
+            ],
+
+            'kelurahanDesa' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kelurahan / Desa harus diisi.'
+                ]
+            ],
+
             'foto_profil' => [
                 'rules' => 'max_size[foto_profil,5120]|is_image[foto_profil]|mime_in[foto_profil,image/png,image/jpg,image/jpeg]',
                 'errors' => [
@@ -146,6 +174,13 @@ class AdminStaff extends BaseController
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'email' => $this->request->getVar('email'),
             'nomor_hp' => $this->request->getVar('nomor_hp'),
+            'alamat' => $this->request->getVar('alamat'),
+            'rt' => $this->request->getVar('rt'),
+            'rw' => $this->request->getVar('rw'),
+            'kecamatan' => $this->request->getVar('kecamatan'),
+            'kelurahan_desa' => $this->request->getVar('kelurahanDesa'),
+            'kabupaten_kota' => $this->request->getVar('kabupatenKota'),
+            'provinsi' => $this->request->getVar('provinsi'),
             'foto_profil' => $namaFoto
         ]);
 
@@ -163,7 +198,7 @@ class AdminStaff extends BaseController
             'SidebarMenuActive' => 'adminStaff',
             'validation' => \config\Services::validation(),
             'jabatan' => $this->JabatanModel->getJabatan(),
-            'admin' => $this->AccountModel->getStaff($id_account)
+            'admin' => $this->AccountModel->getAdmin($id_account)
         ];
         return view('pages/accountStaffEdit', $data);
     }
@@ -232,6 +267,34 @@ class AdminStaff extends BaseController
                 ]
             ],
 
+            'alamat' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Alamat harus diisi.'
+                ]
+            ],
+
+            'rt' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RT harus diisi.'
+                ]
+            ],
+
+            'rw' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RW harus diisi.'
+                ]
+            ],
+
+            'kelurahanDesa' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kelurahan / Desa harus diisi.'
+                ]
+            ],
+
             'foto_profil' => [
                 'rules' => 'max_size[foto_profil,5120]|is_image[foto_profil]|mime_in[foto_profil,image/png,image/jpg,image/jpeg]',
                 'errors' => [
@@ -270,6 +333,13 @@ class AdminStaff extends BaseController
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'email' => $this->request->getVar('email'),
             'nomor_hp' => $this->request->getVar('nomor_hp'),
+            'alamat' => $this->request->getVar('alamat'),
+            'rt' => $this->request->getVar('rt'),
+            'rw' => $this->request->getVar('rw'),
+            'kecamatan' => $this->request->getVar('kecamatan'),
+            'kelurahan_desa' => $this->request->getVar('kelurahanDesa'),
+            'kabupaten_kota' => $this->request->getVar('kabupatenKota'),
+            'provinsi' => $this->request->getVar('provinsi'),
             'foto_profil' => $namaFoto
         ]);
 

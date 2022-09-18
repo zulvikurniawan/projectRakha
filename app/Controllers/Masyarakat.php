@@ -121,6 +121,24 @@ class Masyarakat extends BaseController
                     'required' => 'Alamat harus diisi.'
                 ]
             ],
+            'rt' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RT harus diisi.'
+                ]
+            ],
+            'rw' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RW harus diisi.'
+                ]
+            ],
+            'kelurahanDesa' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kelurahan / Desa harus diisi.'
+                ]
+            ],
             'foto_ktp' => [
                 'rules' => 'uploaded[foto_ktp]|max_size[foto_ktp,5120]|is_image[foto_ktp]|mime_in[foto_ktp,image/png,image/jpg,image/jpeg]',
                 'errors' => [
@@ -156,8 +174,15 @@ class Masyarakat extends BaseController
             'pekerjaan' => $this->request->getVar('pekerjaan'),
             'kewarganegaraan' => $this->request->getVar('kewarganegaraan'),
             'alamat' => $this->request->getVar('alamat'),
+            'rt' => $this->request->getVar('rt'),
+            'rw' => $this->request->getVar('rw'),
+            'kecamatan' => $this->request->getVar('kecamatan'),
+            'kelurahan_desa' => $this->request->getVar('kelurahanDesa'),
+            'kabupaten_kota' => $this->request->getVar('kabupatenKota'),
+            'provinsi' => $this->request->getVar('provinsi'),
             'foto_ktp' => $namaFoto,
-            'status' => 'Pending'
+            'status' => 'Pending',
+            "keterangan" => 'Pending'
         ]);
 
         session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');

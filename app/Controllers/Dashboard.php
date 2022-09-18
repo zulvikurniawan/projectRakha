@@ -11,15 +11,20 @@ class Dashboard extends BaseController
 
     public function index()
     {
+        $summary =  $this->MasyarakatModel->getDashboard();
+        $totalData = 0;
+        foreach ($summary as $s) {
+            $totalData += $s['total'];
+        }
         $data = [
             'title' => 'Dashboard | KECAMATAN PAKUHAJI',
             'SidebarMenuOpen' => 'dashboard',
             'SidebarMenuActive' => 'dashboard',
-            'dasboardMasyarakat' => $this->MasyarakatModel->getDashboard()
-
+            'summary' => $summary,
+            'total' => $totalData
         ];
 
-        // dd($data);
+        // dd($data['summary']['0']);
 
 
         return view('pages/dashboard', $data);
