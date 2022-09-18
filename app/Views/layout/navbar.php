@@ -1,5 +1,6 @@
 <?php $user = session()->get('user') ?>
 
+
 <!-- Preloader -->
 <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="/img/logoPakuHaji.jpg" alt="KecPakuHaji" height="300" width="300">
@@ -65,7 +66,7 @@
                 <?php endif; ?>
 
                 <li class="nav-item mb-3 <?= ($SidebarMenuOpen == 'masyarakat') ? 'menu-open' : '' ?>">
-                    <a href="#" class="nav-link <?= ($SidebarMenuOpen == 'masyarakat') ? 'active' : '' ?>">
+                    <a href="" class="nav-link <?= ($SidebarMenuActive == 'masyarakat' || $SidebarMenuActive == 'approval' || $SidebarMenuActive == 'report') ? 'active' : '' ?>">
                         <i class="nav-icon fas fa-folder"></i>
                         <p>
                             Data Masyarakat
@@ -73,7 +74,7 @@
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
-                        <?php if ($user['id_jabatan'] == 1) : ?>
+                        <?php if ($user['level'] == 0 || $user['level'] == 1) : ?>
                             <li class="nav-item">
                                 <a href="/Masyarakat" class="nav-link <?= ($SidebarMenuActive == 'masyarakat') ? 'active' : '' ?>">
                                     <i class="far fa-circle nav-icon"></i>
@@ -81,7 +82,7 @@
                                 </a>
                             </li>
                         <?php endif; ?>
-                        <?php if ($user['id_jabatan'] == 2) : ?>
+                        <?php if ($user['level'] == 0 || $user['level'] == 2) : ?>
                             <li class="nav-item">
                                 <a href="/Masyarakat/approval" class="nav-link <?= ($SidebarMenuActive == 'approval') ? 'active' : '' ?>">
                                     <i class="far fa-circle nav-icon"></i>
@@ -89,7 +90,7 @@
                                 </a>
                             </li>
                         <?php endif; ?>
-                        <?php if ($user['id_jabatan'] == 3) : ?>
+                        <?php if ($user['level'] == 0 || $user['level'] == 2) : ?>
                             <li class="nav-item">
                                 <a href="/Masyarakat/report" class="nav-link <?= ($SidebarMenuActive == 'report') ? 'active' : '' ?>">
                                     <i class="far fa-circle nav-icon"></i>

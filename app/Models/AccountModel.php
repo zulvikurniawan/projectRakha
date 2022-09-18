@@ -28,14 +28,50 @@ class AccountModel extends Model
     public function getAdmin($id_account = false)
     {
         if ($id_account == false) {
-            return $this->findAll();
+            return $this
+                ->select('account.*,nama_jabatan')
+                ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+                ->findAll();
         }
         return $this
             ->select('account.*,nama_jabatan')
-            ->where(['id_account' => $id_account])
             ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['id_account' => $id_account])
             ->first();
     }
+
+    public function getStaff($id_account = false)
+    {
+        if ($id_account == false) {
+            return $this
+                ->select('account.*,nama_jabatan')
+                ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+                ->where(['j.level' => '2'])
+                ->findAll();
+        }
+        return $this
+            ->select('account.*,nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['id_account' => $id_account, 'j.level' => '2'])
+            ->first();
+    }
+
+    public function getRT($id_account = false)
+    {
+        if ($id_account == false) {
+            return $this
+                ->select('account.*,nama_jabatan')
+                ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+                ->where(['j.level' => '1'])
+                ->findAll();
+        }
+        return $this
+            ->select('account.*,nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['id_account' => $id_account, 'j.level' => '1'])
+            ->first();
+    }
+
 
     public function getNik($nik = false)
     {
@@ -44,7 +80,7 @@ class AccountModel extends Model
             return session()->setFlashdata('error', 'NIK Tidak Boleh Kosong.');
         }
         return $this
-            ->select('account.*,nama_jabatan')
+            ->select('account.*,nama_jabatan,level')
             ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
             ->where(['nik' => $nik])
             ->first();

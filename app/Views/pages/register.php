@@ -49,7 +49,7 @@
     <div class="register-box">
         <div class="card card-outline card-primary mb-3" style="margin-top: 250px;">
             <div class="card-header text-center">
-                <a href="/login/register" class="h1" style="text-decoration:none"><b>SIDEKAT</b></a>
+                <a href="/login/register" class="h1" style="text-decoration:none"><b>REGISTER</b></a>
             </div>
             <!-- form register -->
             <form action="/login/save" method="post" enctype="multipart/form-data">

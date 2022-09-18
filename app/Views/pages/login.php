@@ -35,7 +35,7 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="/login" class="h1"><b>SIDEKAT</b></a>
+                <a href="/login" class="h1"><b>LOGIN</b></a>
                 <?php if (session()->getFlashdata('error')) : ?>
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <?= session()->getFlashdata('error'); ?>
@@ -59,12 +59,12 @@
 
             </div>
             <div class="card-body">
-                <p class="login-box-msg"><b>LOGIN</b></p>
+                <p class="login-box-msg"><b>KECAMATANN PAKUHAJI</b></p>
 
                 <!-- form login -->
                 <form action="/login/proses" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" value="<?= old('nik'); ?>">
+                        <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK / NIP" value="<?= old('nik'); ?>">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
@@ -88,7 +88,7 @@
                 <!-- akhir form login -->
 
                 <p class="mb-0">
-                    <a href="/login/register" class="text-center">Daftar Anggota Baru</a>
+                    <!-- <a href="/login/register" class="text-center">Daftar Anggota Baru</a> -->
                 </p>
             </div>
             <!-- /.card-body -->

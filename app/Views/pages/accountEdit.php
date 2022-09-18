@@ -11,7 +11,7 @@
                 <div class="col-md-6">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Ubah Akun</h3>
+                            <h3 class="card-title">Ubah Akun RT</h3>
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
@@ -37,7 +37,7 @@
                                         <?= $validation->getError('nama'); ?>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="jabatan">Jabatan</label>
                                     <select id="id_jabatan" name="id_jabatan" class="custom-select form-control <?= ($validation->hasError('id_jabatan')) ? 'is-invalid' : ''; ?>">
                                         <option value="<?= $admin['id_jabatan']; ?>" selected hidden><?= $admin['nama_jabatan']; ?></option>
@@ -48,7 +48,7 @@
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('id_jabatan'); ?>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
                                     <label for="jenis_kelamin">Jenis Kelamin</label>
                                     <input class="form-check-input  <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : ''; ?>" type="radio" name="jenis_kelamin" id="jenis_kelamin" value="" disabled hidden checked <?= (old('jenis_kelamin') == '' || $admin['jenis_kelamin'] == '') ? 'checked' : ''; ?>>

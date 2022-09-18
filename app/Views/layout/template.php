@@ -53,7 +53,7 @@
     <?= $this->renderSection('content'); ?>
 
 
-    <footer class="main-footer"><strong>Program <a href="/Dashboard" style="text-decoration:none">SIDEKAT</a></strong>
+    <footer class="main-footer"><strong>Program <a href="/Dashboard" style="text-decoration:none">Rakha</a></strong>
     </footer>
 
     <!-- Control Sidebar -->

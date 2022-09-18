@@ -8,19 +8,19 @@
     <section class="content">
         <div class="container-fluid m-3">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="card card-primary">
                         <div class="card-header">
-                            <h3 class="card-title">Tambah Akun RT</h3>
+                            <h3 class="card-title">Tambah Akun Staff Kecamatan</h3>
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="/Admin/save" method="post" enctype="multipart/form-data">
+                        <form action="/AdminStaff/save" method="post" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="nik">NIK</label>
-                                    <input type="text" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : ''; ?>" id="nik" name="nik" placeholder="Input NIK" autofocus value="<?= old('nik'); ?>">
+                                    <label for="nik">NIP</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('nik')) ? 'is-invalid' : ''; ?>" id="nik" name="nik" placeholder="Input NIP" autofocus value="<?= old('nik'); ?>">
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('nik'); ?>
                                     </div>
@@ -37,6 +37,18 @@
                                     <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" id="nama" name="nama" placeholder="Input Nama Lengkap" value="<?= old('nama'); ?>">
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('nama'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jabatan">Jabatan</label>
+                                    <select id="id_jabatan" name="id_jabatan" class="custom-select form-control <?= ($validation->hasError('id_jabatan')) ? 'is-invalid' : ''; ?>">
+                                        <option value="" selected hidden>Pilih Jabatan</option>
+                                        <?php foreach ($jabatan as $j) : ?>
+                                            <option value="<?= $j['id_jabatan']; ?>"><?= $j['nama_jabatan']; ?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('id_jabatan'); ?>
                                     </div>
                                 </div>
                                 <div class="form-group">

@@ -11,8 +11,8 @@ class Masyarakat extends BaseController
     {
         $data = [
             'title' => 'Report | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'report',
-            'SidebarMenuActive' => 'report',
+            'SidebarMenuOpen' => 'masyarakat',
+            'SidebarMenuActive' => 'masyarakat',
             'masyarakat' => $this->MasyarakatModel->getMasyarakat()
         ];
         $validation = \config\Services::validation();
@@ -170,7 +170,7 @@ class Masyarakat extends BaseController
         $status = 'pending';
         $data = [
             'title' => 'Masyarakat | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'approval',
+            'SidebarMenuOpen' => 'masyarakat',
             'SidebarMenuActive' => 'approval',
             'masyarakatStatus' => $this->MasyarakatModel->getMasyarakatStatus($status)
         ];
@@ -381,7 +381,7 @@ class Masyarakat extends BaseController
     {
         $data = [
             'title' => 'Report | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'report',
+            'SidebarMenuOpen' => 'masyarakat',
             'SidebarMenuActive' => 'report',
             'masyarakat' => $this->MasyarakatModel->getMasyarakat()
         ];

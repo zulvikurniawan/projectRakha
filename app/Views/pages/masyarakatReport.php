@@ -29,7 +29,6 @@
                         <?php foreach ($masyarakat as $m) : ?>
                             <tr>
                                 <th scope="row"><?= $i++; ?></th>
-
                                 <td><?= $m['nik']; ?></td>
                                 <td><?= $m['nama']; ?></td>
                                 <td><?= $m['status']; ?></td>

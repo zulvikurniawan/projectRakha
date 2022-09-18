@@ -11,7 +11,7 @@
     <section class="content">
         <div class="card m-3">
             <div class="card-header">
-                <h2>Daftar Akun RT</h2>
+                <h2>Daftar Akun Staff Kecamatan</h2>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
@@ -34,7 +34,7 @@
                     </div>
                 <?php endif; ?>
 
-                <a href="/admin/Add" class="btn btn-primary mb-3">Tambah Akun RT</a>
+                <a href="/AdminStaff/add" class="btn btn-primary mb-3 ml-3">Tambah Akun Staff Kecamatan</a>
                 <table id="tableAdmin" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>

@@ -37,4 +37,16 @@ class MasyarakatModel extends Model
     {
         return $this->where(['status' => $status])->findAll();
     }
+
+    public function getDashboard()
+    {
+        return $this
+            ->select('
+            case when round(DATEDIFF(Cast(CURRENT_TIMESTAMP() as Date), Cast(tanggal_lahir as Date))/365,0) < 17 then count(nik) end as anak_anak,
+            case when round(DATEDIFF(Cast(CURRENT_TIMESTAMP() as Date), Cast(tanggal_lahir as Date))/365,0) between 17 and 59 then count(nik) end as dewasa,
+            case when round(DATEDIFF(Cast(CURRENT_TIMESTAMP() as Date), Cast(tanggal_lahir as Date))/365,0) > 59 then count(nik) end as lansia,
+            jenis_kelamin')
+            ->groupBy('jenis_kelamin')
+            ->findAll();
+    }
 }

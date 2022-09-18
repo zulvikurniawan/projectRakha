@@ -5,47 +5,49 @@ namespace App\Controllers;
 // jika memakai contsruct
 // use App\Models\AccountModel;
 
-class Admin extends BaseController
+class AdminStaff extends BaseController
 {
     protected $AccountModel;
+    protected $JabatanModel;
 
     public function index()
     {
         $data = [
-            'title' => 'Admin | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'admin',
-            'SidebarMenuActive' => 'admin',
-            'account' => $this->AccountModel->getRT(),
+            'title' => 'Admin Staff | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'adminStaff',
+            'SidebarMenuActive' => 'adminStaff',
+            'account' => $this->AccountModel->getStaff(),
         ];
 
         $validation = \config\Services::validation();
-        return view('pages/adminView', $data);
+        return view('pages/adminStaffView', $data);
     }
 
     //method untuk melihat detail akun
     public function detail($id_account)
     {
         $data = [
-            'title' => 'Detail Account | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'admin',
-            'SidebarMenuActive' => 'admin',
-            'admin' => $this->AccountModel->getRT($id_account)
+            'title' => 'Detail Account Staff | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'adminStaff',
+            'SidebarMenuActive' => 'adminStaff',
+            'admin' => $this->AccountModel->getStaff($id_account)
         ];
 
-        return view('pages/accountDetail', $data);
+        return view('pages/accountStaffDetail', $data);
     }
 
     //method untuk form tambah akun
-    public function Add()
+    public function add()
     {
         $data = [
-            'title' => 'Add Account | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'admin',
-            'SidebarMenuActive' => 'admin',
+            'title' => 'Add Account Staff | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'adminStaff',
+            'SidebarMenuActive' => 'adminStaff',
+            'jabatan' => $this->JabatanModel->getJabatan(),
             'validation' => \config\Services::validation()
         ];
 
-        return view('pages/accountAdd', $data);
+        return view('pages/accountStaffAdd', $data);
     }
 
     //method untuk function simpan akun
@@ -55,12 +57,12 @@ class Admin extends BaseController
         //validasi create account
         if (!$this->validate([
             'nik' => [
-                'rules' => 'required|is_unique[account.nik]|min_length[16]|max_length[16]',
+                'rules' => 'required|is_unique[account.nik]|min_length[18]|max_length[18]',
                 'errors' => [
-                    'required' => 'NIK harus diisi.',
-                    'is_unique' => 'NIK sudah terdaftar.',
-                    'min_length' => 'NIK kurang dari 16 angka.',
-                    'max_length' => 'NIK lebih dari 16 angka.',
+                    'required' => 'NIP harus diisi.',
+                    'is_unique' => 'NIP sudah terdaftar.',
+                    'min_length' => 'NIP kurang dari 18 angka.',
+                    'max_length' => 'NIP lebih dari 18 angka.',
 
                 ]
             ],
@@ -79,12 +81,12 @@ class Admin extends BaseController
                 ]
             ],
 
-            // 'id_jabatan' => [
-            //     'rules' => 'required',
-            //     'errors' => [
-            //         'required' => 'Jabatan harus pilih.'
-            //     ]
-            // ],
+            'id_jabatan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jabatan harus pilih.'
+                ]
+            ],
 
             'jenis_kelamin' => [
                 'rules' => 'required',
@@ -118,7 +120,7 @@ class Admin extends BaseController
 
         ])) {
             // $validation = \config\Services::validation();
-            return redirect()->to('/Admin/Add')->withInput();
+            return redirect()->to('/AdminStaff')->withInput();
         }
 
 
@@ -139,7 +141,7 @@ class Admin extends BaseController
         $this->AccountModel->save([
             'nik' => $this->request->getVar('nik'),
             'nama' => $this->request->getVar('nama'),
-            'id_jabatan' => '1',
+            'id_jabatan' => $this->request->getVar('id_jabatan'),
             'password' => $this->request->getVar('password'),
             'jenis_kelamin' => $this->request->getVar('jenis_kelamin'),
             'email' => $this->request->getVar('email'),
@@ -148,24 +150,7 @@ class Admin extends BaseController
         ]);
 
         session()->setFlashdata('tambahData', 'Data berhasil ditambahkan.');
-        return redirect()->to('/Admin');
-    }
-
-    //method untuk function hapus akun
-    public function delete($id_account)
-    {
-        // cari file berdasarkan id
-        $admin = $this->AccountModel->find($id_account);
-
-        // jika file default, maka file tidak dihapus
-        if ($admin['foto_profil'] != 'default.jpg') {
-            // hapus file
-            unlink('img/' . $admin['foto_profil']);
-        }
-
-        $this->AccountModel->delete($id_account);
-        session()->setFlashdata('hapusData', 'Data berhasil dihapus.');
-        return redirect()->to('/Admin');
+        return redirect()->to('/AdminStaff');
     }
 
     //method untuk form edit
@@ -174,13 +159,13 @@ class Admin extends BaseController
         $data = [
             $this->request->getVar('id_account'),
             'title' => 'Edit Account | KECAMATAN PAKUHAJI',
-            'SidebarMenuOpen' => 'admin',
-            'SidebarMenuActive' => 'admin',
+            'SidebarMenuOpen' => 'adminStaff',
+            'SidebarMenuActive' => 'adminStaff',
             'validation' => \config\Services::validation(),
             'jabatan' => $this->JabatanModel->getJabatan(),
-            'admin' => $this->AccountModel->getRT($id_account)
+            'admin' => $this->AccountModel->getStaff($id_account)
         ];
-        return view('pages/accountEdit', $data);
+        return view('pages/accountStaffEdit', $data);
     }
 
     //method untuk function update
@@ -188,7 +173,7 @@ class Admin extends BaseController
     {
 
         //cek nik lama
-        // $nipLama = $this->AccountModel->getRT($this->request->getVar('nipLama'));
+        // $nipLama = $this->AccountModel->getStaff($this->request->getVar('nipLama'));
         // if ($nipLama['nik'] == $this->request->getVar('nik')) {
         //     $rule_nip = 'required';
         // } else {
@@ -257,7 +242,7 @@ class Admin extends BaseController
             ]
 
         ])) {
-            return redirect()->to('/Admin/edit/' . $id_account)->withInput();
+            return redirect()->to('/AdminStaff/edit/' . $id_account)->withInput();
         }
 
         //proses menambahkan file foto dari form
@@ -289,6 +274,6 @@ class Admin extends BaseController
         ]);
 
         session()->setFlashdata('ubahData', 'Data berhasil diubah.');
-        return redirect()->to('/Admin');
+        return redirect()->to('/AdminStaff');
     }
 }
