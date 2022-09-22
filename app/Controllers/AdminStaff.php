@@ -198,7 +198,7 @@ class AdminStaff extends BaseController
             'SidebarMenuActive' => 'adminStaff',
             'validation' => \config\Services::validation(),
             'jabatan' => $this->JabatanModel->getJabatan(),
-            'admin' => $this->AccountModel->getAdmin($id_account)
+            'admin' => $this->AccountModel->getStaff($id_account)
         ];
         return view('pages/accountStaffEdit', $data);
     }

@@ -16,7 +16,6 @@ class AccountModel extends Model
 
     protected $allowedFields = ['nik', 'nama', 'password', 'id_jabatan', 'email', 'jenis_kelamin', 'nomor_hp', 'alamat', 'rt', 'rw', 'kecamatan', 'kelurahan_desa', 'kabupaten_kota', 'provinsi', 'foto_profil'];
 
-
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
@@ -47,7 +46,8 @@ class AccountModel extends Model
             return $this
                 ->select('account.*,nama_jabatan')
                 ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
-                ->where(['j.level' => '2'])
+                ->where(['j.level' => '0'])
+                ->orWhere(['j.level' => '2'])
                 ->findAll();
         }
         return $this
@@ -73,10 +73,8 @@ class AccountModel extends Model
             ->first();
     }
 
-
     public function getNik($nik = false)
     {
-
         if ($nik == false) {
             return session()->setFlashdata('error', 'NIK Tidak Boleh Kosong.');
         }

@@ -56,7 +56,7 @@
             <div class="small-box bg-danger">
               <div class="inner">
                 <h4>Perempuan Lansia</h4>
-                <h4><?= $summary['0']['lansia']; ?></h4>
+                <h4><?= $summary['1']['lansia']; ?></h4>
               </div>
               <div class="icon">
                 <i class="fas fa-venus"></i>

@@ -39,8 +39,9 @@
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">NIK / NIP</th>
+                            <th scope="col">NIK</th>
                             <th scope="col">Name</th>
+                            <th scope="col">Jenis Kelamin</th>
                             <th scope="col">Jabatan</th>
                             <th scope="col" class="text-center">Action</th>
                         </tr>
@@ -53,6 +54,7 @@
 
                                 <td><?= $a['nik']; ?></td>
                                 <td><?= $a['nama']; ?></td>
+                                <td><?= $a['jenis_kelamin']; ?></td>
                                 <td><?= $a['nama_jabatan']; ?></td>
                                 <td class="text-center">
                                     <!-- tombol jika menggunakan modal -->

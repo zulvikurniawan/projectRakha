@@ -25,7 +25,11 @@ class JabatanModel extends Model
     public function getJabatan($id_jabatan = false)
     {
         if ($id_jabatan == false) {
-            return $this->findAll();
+            return $this
+                ->select('jabatan.*')
+                ->where(['jabatan.level' => '0'])
+                ->orWhere(['jabatan.level' => '2'])
+                ->findAll();
         }
 
         return $this->where(['id_jabatan' => $id_jabatan])->first();

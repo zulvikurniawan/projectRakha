@@ -43,9 +43,9 @@ class MasyarakatModel extends Model
         return $this
             ->select('
             count(nik) as total,
-            coalesce(case when round(DATEDIFF(Cast(CURRENT_TIMESTAMP() as Date), Cast(tanggal_lahir as Date))/365,0) < 17 then count(nik) end,0) as anak_anak,
-            coalesce(case when round(DATEDIFF(Cast(CURRENT_TIMESTAMP() as Date), Cast(tanggal_lahir as Date))/365,0) between 17 and 59 then count(nik) end,0) as dewasa,
-            coalesce(case when round(DATEDIFF(Cast(CURRENT_TIMESTAMP() as Date), Cast(tanggal_lahir as Date))/365,0) > 59 then count(nik) end,0) as lansia,
+            count(case when TIMESTAMPDIFF(year,Cast(tanggal_lahir as Date),Cast(CURRENT_TIMESTAMP() as Date)) < 17 then 1 end) as anak_anak,
+            count(case when TIMESTAMPDIFF(year,Cast(tanggal_lahir as Date),Cast(CURRENT_TIMESTAMP() as Date)) between 17 and 59 then 1 end) as dewasa,
+            count(case when TIMESTAMPDIFF(year,Cast(tanggal_lahir as Date),Cast(CURRENT_TIMESTAMP() as Date)) > 59 then 1 end) as lansia,
             jenis_kelamin')
             ->groupBy('jenis_kelamin')
             ->findAll();
