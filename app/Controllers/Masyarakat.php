@@ -32,6 +32,19 @@ class Masyarakat extends BaseController
         return view('pages/masyarakatDetail', $data);
     }
 
+    //method untuk melihat detail masyarakat
+    public function detailApproval($id_masyarakat)
+    {
+        $data = [
+            'title' => 'Detail masyarakat | KECAMATAN PAKUHAJI',
+            'SidebarMenuOpen' => 'masyarakat',
+            'SidebarMenuActive' => 'approval',
+            'masyarakat' => $this->MasyarakatModel->getMasyarakat($id_masyarakat)
+        ];
+
+        return view('pages/masyarakatDetailApproval', $data);
+    }
+
     //method untuk form tambah masyarakat
     public function Add()
     {

@@ -61,7 +61,7 @@
                                 </button> -->
 
                                     <!-- tombol tanpa modal -->
-                                    <a href="/Masyarakat/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-warning">Detail</a>
+                                    <a href="/Masyarakat/detailApproval/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-warning">Detail</a>
                                     <a href="/Masyarakat/acc/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-success">Approve</a>
                                     <a href="/Masyarakat/reject/<?= $m['id_masyarakat']; ?>" class="btn btn-sm btn-danger">Reject</a>
                                 </td>

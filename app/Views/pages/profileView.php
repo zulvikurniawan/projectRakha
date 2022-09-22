@@ -43,6 +43,27 @@
                                 <li class=" list-group-item">
                                     <b>Nomor Hp</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['nomor_hp']; ?></a>
                                 </li>
+                                <li class=" list-group-item">
+                                    <b>Alamat</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['alamat']; ?></a>
+                                </li>
+                                <li class=" list-group-item">
+                                    <b>RT</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['rt']; ?></a>
+                                </li>
+                                <li class=" list-group-item">
+                                    <b>RW</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['rw']; ?></a>
+                                </li>
+                                <li class=" list-group-item">
+                                    <b>Kelurahan / Desa</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['kelurahan_desa']; ?></a>
+                                </li>
+                                <li class=" list-group-item">
+                                    <b>Kecamatan</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['kecamatan']; ?></a>
+                                </li>
+                                <li class=" list-group-item">
+                                    <b>Kabupaten / Kota</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['kabupaten_kota']; ?></a>
+                                </li>
+                                <li class=" list-group-item">
+                                    <b>Provinsi</b> <a class="float-right text-dark" style="text-decoration:none"><?= $admin['provinsi']; ?></a>
+                                </li>
                             </ul>
                         </div>
                         <!-- /.card-body -->

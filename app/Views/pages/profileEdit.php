@@ -37,19 +37,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="jabatan">Jabatan</label>
-                                    <select id="id_jabatan" name="id_jabatan" class="custom-select form-control <?= ($validation->hasError('id_jabatan')) ? 'is-invalid' : ''; ?>">
-                                        <option value="<?= $admin['id_jabatan']; ?>" selected hidden><?= $admin['nama_jabatan']; ?></option>
-                                        <?php foreach ($jabatan as $j) : ?>
-                                            <option value="<?= $j['id_jabatan']; ?>"><?= $j['nama_jabatan']; ?></option>
-                                        <?php endforeach ?>
-                                    </select>
-                                    <div class="invalid-feedback">
-                                        <?= $validation->getError('id_jabatan'); ?>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-
                                     <label for="jenis_kelamin">Jenis Kelamin</label>
                                     <input class="form-check-input  <?= ($validation->hasError('jenis_kelamin')) ? 'is-invalid' : ''; ?>" type="radio" name="jenis_kelamin" id="jenis_kelamin" value="" disabled hidden checked <?= (old('jenis_kelamin') == '' || $admin['jenis_kelamin'] == '') ? 'checked' : ''; ?>>
                                     <div class="form-check">
@@ -81,6 +68,46 @@
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('nomor_hp'); ?>
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="alamat">Alamat</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : ''; ?>" id="alamat" name="alamat" placeholder="Input Alamat" value="<?= $admin['alamat']; ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('alamat'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rt">RT</label>
+                                    <input type="number" class="form-control <?= ($validation->hasError('rt')) ? 'is-invalid' : ''; ?>" id="rt" name="rt" placeholder="Input RT" value="<?= $admin['rt']; ?>" style="max-width: 120px;">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('rt'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rw">RW</label>
+                                    <input type="number" class="form-control <?= ($validation->hasError('rw')) ? 'is-invalid' : ''; ?>" id="rw" name="rw" placeholder="Input RW" value="<?= $admin['rw']; ?>" style="max-width: 120px;">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('rw'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="kelurahanDesa">Kelurahan / Desa</label>
+                                    <input type="text" class="form-control <?= ($validation->hasError('kelurahanDesa')) ? 'is-invalid' : ''; ?>" id="kelurahanDesa" name="kelurahanDesa" placeholder="Input Kelurahan / Desa" value="<?= $admin['kelurahan_desa']; ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('kelurahanDesa'); ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="kecamatan">Kecamatan</label>
+                                    <input type="text" class="form-control" id="kecamatan" name="kecamatan" value="Paku Haji" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="kabupatenKota">Kabupaten / Kota</label>
+                                    <input type="text" class="form-control" id="kabupatenKota" name="kabupatenKota" value="Kabupaten Tangerang" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="provinsi">Provinsi</label>
+                                    <input type="text" class="form-control" id="provinsi" name="provinsi" value="Banten" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="foto_profil">Foto Profil</label>
