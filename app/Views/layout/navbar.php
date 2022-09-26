@@ -107,7 +107,7 @@
                                 </a>
                             </li>
                         <?php endif; ?>
-                        <?php if ($user['level'] == 0 || $user['level'] == 2) : ?>
+                        <?php if ($user['level'] == 0 || $user['level'] == 2 || $user['level'] == 3) : ?>
                             <li class="nav-item">
                                 <a href="/Masyarakat/report" class="nav-link <?= ($SidebarMenuActive == 'report') ? 'active' : '' ?>">
                                     <i class="far fa-circle nav-icon"></i>

@@ -29,6 +29,7 @@ class JabatanModel extends Model
                 ->select('jabatan.*')
                 ->where(['jabatan.level' => '0'])
                 ->orWhere(['jabatan.level' => '2'])
+                ->orWhere(['jabatan.level' => '3'])
                 ->findAll();
         }
 

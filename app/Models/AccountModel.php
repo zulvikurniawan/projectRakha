@@ -48,6 +48,7 @@ class AccountModel extends Model
                 ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
                 ->where(['j.level' => '0'])
                 ->orWhere(['j.level' => '2'])
+                ->orWhere(['j.level' => '3'])
                 ->findAll();
         }
         return $this
@@ -70,6 +71,22 @@ class AccountModel extends Model
             ->select('account.*,nama_jabatan')
             ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
             ->where(['id_account' => $id_account, 'j.level' => '1'])
+            ->first();
+    }
+
+    public function getCamat($id_account = false)
+    {
+        if ($id_account == false) {
+            return $this
+                ->select('account.*,nama_jabatan')
+                ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+                ->where(['j.level' => '3'])
+                ->findAll();
+        }
+        return $this
+            ->select('account.*,nama_jabatan')
+            ->join('jabatan as j', 'j.id_jabatan = account.id_jabatan')
+            ->where(['id_account' => $id_account, 'j.level' => '3'])
             ->first();
     }
 
