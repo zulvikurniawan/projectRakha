@@ -82,41 +82,43 @@
                     </li>
                 <?php endif; ?>
 
-                <li class="nav-item mb-3 <?= ($SidebarMenuOpen == 'masyarakat') ? 'menu-open' : '' ?>">
-                    <a href="" class="nav-link <?= ($SidebarMenuActive == 'masyarakat' || $SidebarMenuActive == 'approval' || $SidebarMenuActive == 'report') ? 'active' : '' ?>">
-                        <i class="nav-icon fas fa-folder"></i>
-                        <p>
-                            Data Masyarakat
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <?php if ($user['level'] == 1) : ?>
-                            <li class="nav-item">
-                                <a href="/Masyarakat" class="nav-link <?= ($SidebarMenuActive == 'masyarakat') ? 'active' : '' ?>">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Input</p>
-                                </a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($user['level'] == 2) : ?>
-                            <li class="nav-item">
-                                <a href="/Masyarakat/approval" class="nav-link <?= ($SidebarMenuActive == 'approval') ? 'active' : '' ?>">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Approval</p>
-                                </a>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($user['level'] == 2 || $user['level'] == 3) : ?>
-                            <li class="nav-item">
-                                <a href="/Masyarakat/report" class="nav-link <?= ($SidebarMenuActive == 'report') ? 'active' : '' ?>">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Report</p>
-                                </a>
-                            </li>
-                        <?php endif; ?>
-                    </ul>
-                </li>
+                <?php if ($user['level'] == 2 || $user['level'] == 3) : ?>
+                    <li class="nav-item mb-3 <?= ($SidebarMenuOpen == 'masyarakat') ? 'menu-open' : '' ?>">
+                        <a href="" class="nav-link <?= ($SidebarMenuActive == 'masyarakat' || $SidebarMenuActive == 'approval' || $SidebarMenuActive == 'report') ? 'active' : '' ?>">
+                            <i class="nav-icon fas fa-folder"></i>
+                            <p>
+                                Data Masyarakat
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <?php if ($user['level'] == 1) : ?>
+                                <li class="nav-item">
+                                    <a href="/Masyarakat" class="nav-link <?= ($SidebarMenuActive == 'masyarakat') ? 'active' : '' ?>">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Input</p>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if ($user['level'] == 2) : ?>
+                                <li class="nav-item">
+                                    <a href="/Masyarakat/approval" class="nav-link <?= ($SidebarMenuActive == 'approval') ? 'active' : '' ?>">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Approval</p>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if ($user['level'] == 2 || $user['level'] == 3) : ?>
+                                <li class="nav-item">
+                                    <a href="/Masyarakat/report" class="nav-link <?= ($SidebarMenuActive == 'report') ? 'active' : '' ?>">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Report</p>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                        </ul>
+                    </li>
+                <?php endif; ?>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
